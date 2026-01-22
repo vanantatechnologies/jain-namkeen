@@ -1,0 +1,162 @@
+.navbar {
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    z-index: 999;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0.3rem 0;
+    .navbar-logo {
+      a{
+        display: block;
+        line-height: 0;
+        width: 80px;
+        img{
+          width: 80px;
+          line-height: 0;
+        }
+      }
+    }
+
+    .navbar-links {
+      @media only screen and (max-width: 991px) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        &.active {
+          max-height: 1000px;
+        }
+      }
+      ul.navbar-menu {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        @media only screen and (max-width: 991px) {
+          flex-direction: column;
+        }
+
+        li.navbar-item {
+          position: relative;
+
+          @media only screen and (max-width: 991px) {
+            width: 100%;
+            border-top: 1px solid #eee;
+          }
+          &:nth-child(5) {
+            background-color: var(--white);
+            border-radius: 30px;
+            border: 1px solid var(--black);
+            transition: var(--transition);
+            &:hover{
+              background-color: var(--black);
+              border: 1px solid var(--primary);
+              .navbar-link{
+                color: var(--white);
+              }
+            }
+            .navbar-link{
+              color: var(--black);
+            }
+          }
+          &:nth-child(6) {
+            background-color: #000;
+            border-radius: 30px;
+            .navbar-link{
+              color: var(--white);
+            }
+          }
+          a.navbar-link {
+            display: flex;
+            align-items: center;
+            padding: 0.9rem 1.25rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+
+            @media only screen and (max-width: 991px) {
+              justify-content: space-between;
+              padding: 1rem 1.5rem;
+            }
+
+
+            .navbar-caret {
+              margin-left: 5px;
+            }
+          }
+
+          /* Common dropdown style for Products, Services, Apps */
+          &.navbar-products,
+          &.navbar-services,
+          &.navbar-apps {
+            ul.navbar-submenu {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              background: #f8f8f8;
+              min-width: 220px;
+              max-height: 0;
+              overflow: hidden;
+              opacity: 0;
+              visibility: hidden;
+              transition: all 0.3s ease;
+              flex-direction: column;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+              @media only screen and (max-width: 991px) {
+                position: relative;
+                top: 0;
+                left: 0;
+                box-shadow: none;
+                background: #f9f9f9;
+              }
+
+              li.submenu-item {
+                a.submenu-link {
+                  display: block;
+                  padding: 0.8rem 1rem;
+                  color: #333;
+                  font-weight: 400;
+
+                  &:hover {
+                    background: #007bff;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+
+            /* Show submenu when open */
+            &.open > ul.navbar-submenu {
+              max-height: 1000px;
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #333;
+      @media only screen and (max-width: 991px) {
+        display: block;
+      }
+    }
+  }
+}
+

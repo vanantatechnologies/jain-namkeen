@@ -1,0 +1,44 @@
+.section-top-contact{
+  background: linear-gradient(-45deg, #004B21 0%, #045B2A 100%);
+  padding: 6px 0;
+  .top-contact-left{
+    display: flex;
+    align-items: center;
+    .since{
+      background-color: #E71C22;
+      border-radius: var(--radius-5);
+      padding: 2px 10px;
+      width: max-content;
+      margin-right: 0.5rem;
+    }
+  }
+  .top-contact-right{
+    li{
+      display: flex;
+      align-items: center;
+      a{
+        transition: var(--transition);
+      }
+      &:hover{
+        a{
+          opacity: 0.8;
+        }
+      }
+      &:first-child{
+        margin-right: 1rem;
+      }
+      span{
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(-45deg, #004B21 0%, #076a32 100%);
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,332 @@
+/*-- reset start --*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/*-- reset end --*/
+
+/*-- variables start --*/
+:root {
+  --primary-hover: rgba(230, 0, 18, 0.80);
+  --primary-5: rgba(230, 0, 18, 0.05);
+  --secondary: #000000;
+  --third: rgba(0, 0, 0, 0.80);
+  --gray-3: rgba(0, 0, 0, 0.03);
+  --radius-5: 5px;
+  --radius-10: 10px;
+  --transition: all 0.3s ease-in-out;
+
+  --primary: rgba(1, 166, 74, 1);
+  --primary-light: rgba(1, 166, 74, 0.9);
+  --bglight: rgba(245, 245, 245, 1);
+  --gray-1: rgba(235, 235, 235, 1);
+  --gray-5: rgba(0, 0, 0, 0.05);
+
+  --white: rgba(255,255,255,1);
+  --black: rgba(0, 0, 0, 1);
+  --black-80: rgba(116, 116, 116, 1);
+
+  --inter: 'Inter', sans-serif;
+}
+.bg-primary-5{
+  background-color: var(--primary-5);
+}
+
+.font-black{
+  color: var(--black);
+}
+.font-primary{
+  color: var(--primary);
+}
+.font-black-80{
+  color: var(--black-80);
+}
+.bglight{
+  background-color: var(--bglight);
+}
+.mb-40{
+  margin-bottom: 40px;
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+/*-- variables end --*/
+
+/*-- fonts start --*/
+/* Gilroy */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../src/assets/fonts/Gilroy-Regular.woff2') format('woff2'),
+  url('../src/assets/fonts/Gilroy-Regular.woff') format('woff'),
+  url('../src/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../src/assets/fonts/Gilroy-Medium.woff2') format('woff2'),
+  url('../src/assets/fonts/Gilroy-Medium.woff') format('woff'),
+  url('../src/assets/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../src/assets/fonts/Gilroy-SemiBold.woff2') format('woff2'),
+  url('../src/assets/fonts/Gilroy-SemiBold.woff') format('woff'),
+  url('../src/assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../src/assets/fonts/Gilroy-Bold.woff2') format('woff2'),
+  url('../src/assets/fonts/Gilroy-Bold.woff') format('woff'),
+  url('../src/assets/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gelica */
+@font-face {
+  font-family: 'Gelica';
+  src: url('../src/assets/fonts/Gelica-Regular.woff2') format('woff2'),
+  url('../src/assets/fonts/Gelica-Regular.woff') format('woff'),
+  url('../src/assets/fonts/Gelica-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gelica';
+  src: url('../src/assets/fonts/Gelica-MediumItalic.woff2') format('woff2'),
+  url('../src/assets/fonts/Gelica-MediumItalic.woff') format('woff'),
+  url('../src/assets/fonts/Gelica-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gelica';
+  src: url('../src/assets/fonts/Gelica-SemiBoldItalic.woff2') format('woff2'),
+  url('../src/assets/fonts/Gelica-SemiBoldItalic.woff') format('woff'),
+  url('../src/assets/fonts/Gelica-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gelica';
+  src: url('../src/assets/fonts/Gelica-Bold.woff2') format('woff2'),
+  url('../src/assets/fonts/Gelica-Bold.woff') format('woff'),
+  url('../src/assets/fonts/Gelica-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-- fonts end --*/
+
+
+/*-- base start --*/
+body {
+  font-family: 'Gilroy', sans-serif;
+  letter-spacing: 0.25px;
+}
+/*-- base end --*/
+
+/*-- font utilities start --*/
+/*-- gilroy utilities start --*/
+.gilroy-regular { font-family: 'Gilroy', sans-serif; font-weight: 400; }
+.gilroy-medium  { font-family: 'Gilroy', sans-serif; font-weight: 500; }
+.gilroy-semibold{ font-family: 'Gilroy', sans-serif; font-weight: 600; }
+.gilroy-bold    { font-family: 'Gilroy', sans-serif; font-weight: 700; }
+/*-- gilroy utilities end --*/
+
+/*-- gelica utilities start --*/
+.gelica-regular          { font-family: 'Gelica', serif; font-weight: 400; }
+.gelica-medium-italic    { font-family: 'Gelica', serif; font-weight: 500; font-style: italic; }
+.gelica-semibold-italic  { font-family: 'Gelica', serif; font-weight: 600; font-style: italic; }
+.gelica-bold             { font-family: 'Gelica', serif; font-weight: 700; }
+/*-- gelica utilities end --*/
+
+/*-- font utilities end --*/
+
+/*-- utilities start --*/
+.transition { transition: var(--transition); }
+/*-- utilities end --*/
+
+
+
+/*-- common css start --*/
+@media only screen and (min-width: 1500px) {
+  .custom-container {
+    max-width: 1470px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .custom-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.ptb-80{
+  padding-top: 80px;
+  padding-bottom: 90px;
+  @media only screen and (max-width: 1599px) {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  @media only screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  @media only screen and (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+.font-60 {
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -3px;
+  @media only screen and (max-width: 1599px) {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  @media only screen and (max-width: 1199px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @media only screen and (max-width: 991px) {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  @media only screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+
+.font-50 {
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  @media only screen and (max-width: 1599px) {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  @media only screen and (max-width: 1199px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @media only screen and (max-width: 991px) {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  @media only screen and (max-width: 767px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.font-18 {
+  font-size: 18px;
+  line-height: 28px;
+  @media only screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.font-20 {
+  font-size: 20px;
+  line-height: 30px;
+  @media only screen and (max-width: 991px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.font-24 {
+  font-size: 24px;
+  line-height: 30px;
+  @media only screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.font-12 {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  @media only screen and (max-width: 991px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.font-14 {
+  font-size: 14px;
+  line-height: 24px;
+  @media only screen and (max-width: 991px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.font-16 {
+  font-size: 16px;
+  line-height: 26px;
+  @media only screen and (max-width: 991px) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.common-primary-btn{
+  background-color: var(--primary);
+  padding: 12px 25px;
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  transition: var(--transition);
+  &:hover{
+    background-color: var(--primary-light);
+  }
+
+}
+/*-- common css end --*/
+
+
+

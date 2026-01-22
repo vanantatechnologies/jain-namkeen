@@ -1,0 +1,51 @@
+.faq-main{
+  .custom-accordion-item{
+    border: 1px solid var(--gray-5);
+    border-radius: var(--radius-10);
+    overflow: hidden;
+    &.active{
+      border: 1px solid var(--primary-light);
+    }
+  }
+  .custom-accordion-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 50px 22px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--radius-10);
+    overflow: hidden;
+    position: relative;
+    @media only screen and (max-width: 991px) {
+      padding: 15px 40px 15px 15px;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('../../assets/img/common/arrow-down.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: transform 0.3s ease;
+      position: absolute;
+      right: 20px;
+      top: 35px;
+      transform: translateY(-50%);
+      @media only screen and (max-width: 767px) {
+        right: 15px;
+        top: 30px;
+      }
+    }
+  }
+  .custom-accordion-button[aria-expanded="true"]::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .custom-accordion-panel{
+    padding: 0 20px 15px 20px;
+    @media only screen and (max-width: 991px) {
+      padding: 15px 15px;
+    }
+  }
+}

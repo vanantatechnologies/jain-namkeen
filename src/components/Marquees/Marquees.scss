@@ -1,0 +1,99 @@
+.marquee-section {
+  width: 100%;
+  background: var(--primary);
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+  .marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 18s linear infinite;
+      will-change: transform;
+      .marquee-content {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        .marquee-item {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 28px;
+          position: relative;
+          &:after{
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+            margin-left: 50px;
+            display: inline-block;
+          }
+          &:last-child:after{
+            //display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Smooth performance on mobile */
+@media screen and (max-width: 768px) {
+  .marquee-track {
+    animation-duration: 14s;
+  }
+
+  .marquee-item {
+    padding: 0 18px;
+  }
+
+  .marquee-item::after {
+    margin-left: 18px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.patterns-top{
+  height: 12px;
+  position: absolute;
+  width: 100%;
+  line-height: 0;
+  top: 0;
+  .pattern-design{
+    background-image: url('../../assets/img/svg/pattern-blue.svg');
+    background-repeat: repeat;
+    background-size: 24px;
+    background-position: top left;
+    height: 100%;
+
+  }
+}
+.patterns-bottom{
+  height: 12px;
+  position: absolute;
+  width: 100%;
+  line-height: 0;
+  bottom: 0;
+  .pattern-design{
+    background-image: url('../../assets/img/svg/pattern-white.svg');
+    background-repeat: repeat;
+    background-size: 24px;
+    background-position: top left;
+    height: 100%;
+    transform: rotate(180deg);
+  }
+}
