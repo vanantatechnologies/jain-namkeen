@@ -19,7 +19,7 @@ const Footer = () => {
                                 <div className="footer-left">
                                     <a
                                         className="mb-2 mb-md-3 text-sm-center text-lg-start"
-                                        href="#"
+                                        href="/about"
                                     >
                                         <img
                                             src={footerLogo}
@@ -174,7 +174,7 @@ const Footer = () => {
                         Copyright © 2026 JAIN NAMKEEN. All Rights Reserved
                     </div>
                     <div className="right">
-                        Designed and Developed by <a href="#!">Sunny Soni.</a>
+                        Designed and Developed by <a href="/about">Sunny Soni.</a>
                     </div>
                 </div>
             </div>

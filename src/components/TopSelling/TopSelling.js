@@ -135,7 +135,7 @@ const TopSelling = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <a href="#" className="font-18 gilroy-medium common-primary-btn mt-4 mt-md-5">View all products</a>
+                        <a href="/about" className="font-18 gilroy-medium common-primary-btn mt-4 mt-md-5">View all products</a>
                     </div>
                 </div>
 

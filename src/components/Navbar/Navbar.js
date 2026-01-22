@@ -1,29 +1,29 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import { FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import jainlogo from "../../assets/img/jain-namkeen.svg";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [activeMenu, setActiveMenu] = useState(""); // Track which submenu is open
+    // const [activeMenu, setActiveMenu] = useState(""); // Track which submenu is open
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     // Toggle dropdowns — one open at a time
-    const handleToggle = (menu, e) => {
+    /*const handleToggle = (menu, e) => {
         if (window.innerWidth <= 991) {
             e.preventDefault();
             setActiveMenu(activeMenu === menu ? "" : menu);
         }
-    };
+    };*/
 
     // Hover handling for desktop
-    const handleMouseEnter = (menu) => {
+/*    const handleMouseEnter = (menu) => {
         if (window.innerWidth > 991) setActiveMenu(menu);
     };
     const handleMouseLeave = () => {
         if (window.innerWidth > 991) setActiveMenu("");
-    };
+    };*/
 
     return (
         <nav className="navbar">

@@ -99,7 +99,7 @@ const ProductCategories = () => {
                         <div className="product-slider">
                             <Slider {...settings}>
                                 {productData.map((product, index) => (
-                                    <a href="#" key={index} className="product-item text-decoration-none">
+                                    <a href="/about" key={index} className="product-item text-decoration-none">
                                         <div className="product-top position-relative">
                                             <div className="product-quality d-flex justify-content-between align-items-center">
                                         <span className="font-12 gilroy-medium text-white bedge-left d-none">
@@ -135,7 +135,7 @@ const ProductCategories = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <a href="#" className="font-18 gilroy-medium common-primary-btn mt-4 mt-md-5">View all products</a>
+                        <a href="/about" className="font-18 gilroy-medium common-primary-btn mt-4 mt-md-5">View all products</a>
                     </div>
                 </div>
 

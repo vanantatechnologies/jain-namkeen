@@ -21,7 +21,7 @@ const About = () => {
                                     Each product has a minimum shelf life of two months from the date of manufacturing, reflecting our commitment to freshness without compromising on purity.
                                     All products are manufactured by Jain Namkeen Industries, where our management enforces a strict no cost-cutting policy in the manufacturing process. Production is carried out by skilled artisans with decades of experience in namkeen making, preserving traditional methods while maintaining consistent quality standards.
                                 </p>
-                                <a href="#" className="font-18 gilroy-medium common-primary-btn mt-3 mt-md-4">Read More</a>
+                                <a href="/about" className="font-18 gilroy-medium common-primary-btn mt-3 mt-md-4">Read More</a>
                             </div>
                         </div>
                     </div>
