@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeBanner.scss";
-import jainlogo from "../../assets/img/dd.webp";
+import jainlogo from "../../assets/img/banner-top.png";
 
 const HomeBanner = () => {
     return (

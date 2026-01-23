@@ -12,31 +12,42 @@ import "react-accessible-accordion/dist/fancy-example.css";
 // -- JSON FAQ Data --
 const faqData = [
     {
-        question: "What types of namkeen do you manufacture?",
+        question: "What types of namkeen does Jain Namkeen manufacture?",
         answer:
-            "We manufacture a wide range of namkeen products including traditional Indian snacks, spicy mixtures, fried namkeen, and customized varieties as per market demand.",
+            "Jain Namkeen manufactures a wide variety of traditional Indian namkeen, including spicy mixtures, sev, bhujia, chivda, fried snacks, and regional specialty namkeen."
     },
     {
-        question: "What industries does Trackzer Switchgears Pvt. Ltd. serve?",
+        question: "Are Jain Namkeen products made using quality ingredients?",
         answer:
-            "We cater to diverse industries such as manufacturing, utilities, Oil & Gas, and service industries...",
+            "Yes, all Jain Namkeen products are prepared using carefully selected, high-quality ingredients to ensure consistent taste, freshness, and hygiene."
     },
     {
-        question: "What industries does Trackzer Switchgears Pvt. Ltd. serve?",
+        question: "Do you offer Jain-friendly or no-onion, no-garlic products?",
         answer:
-            "We cater to diverse industries such as manufacturing, utilities, Oil & Gas, and service industries...",
+            "Yes, Jain Namkeen offers Jain-friendly namkeen options prepared without onion and garlic, adhering to Jain dietary principles."
     },
     {
-        question: "What industries does Trackzer Switchgears Pvt. Ltd. serve?",
+        question: "Are your products suitable for bulk or wholesale purchase?",
         answer:
-            "We cater to diverse industries such as manufacturing, utilities, Oil & Gas, and service industries...",
+            "Yes, Jain Namkeen supplies products for retail, bulk orders, and wholesale distribution, catering to shops, distributors, and corporate requirements."
     },
     {
-        question: "What industries does Trackzer Switchgears Pvt. Ltd. serve?",
+        question: "How do you ensure hygiene and quality control?",
         answer:
-            "We cater to diverse industries such as manufacturing, utilities, Oil & Gas, and service industries...",
+            "Our manufacturing process follows strict hygiene standards and quality control measures at every stage, from raw material sourcing to final packaging."
+    },
+    {
+        question: "Do you provide customized namkeen varieties?",
+        answer:
+            "Yes, customized namkeen blends and packaging options can be developed based on specific customer or market requirements."
+    },
+    {
+        question: "How should Jain Namkeen products be stored?",
+        answer:
+            "Namkeen should be stored in a cool, dry place in airtight packaging to maintain freshness and crispness."
     }
 ];
+
 
 const Faq = () => {
     const [activeIndex, setActiveIndex] = useState(0);

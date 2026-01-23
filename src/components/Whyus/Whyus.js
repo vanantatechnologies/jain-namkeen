@@ -1,6 +1,40 @@
 import React from "react";
 import "./Whyus.scss";
 import jainstore from "../../assets/img/common/jain-store.png";
+
+const faqData = [
+    {
+        question: "Authentic Taste & Traditional Recipes",
+        answer:
+            "At Jain Namkeen & Sweets, we follow time-tested recipes to deliver authentic taste in every namkeen and sweet, loved by all age groups.",
+    },
+    {
+        question: "Premium Quality Ingredients",
+        answer:
+            "We use carefully selected ingredients and maintain consistent quality to ensure rich flavor, freshness, and the perfect crunch in every bite.",
+    },
+    {
+        question: "Hygienic Preparation & Packaging",
+        answer:
+            "Our products are prepared under hygienic conditions and packed with care to maintain freshness, taste, and quality from our kitchen to your home.",
+    },
+    {
+        question: "Wide Variety of Namkeen & Sweets",
+        answer:
+            "From spicy mixtures and crispy snacks to delicious traditional sweets, we offer a wide range of options for daily cravings and festive celebrations.",
+    },
+    {
+        question: "Jain-Friendly Options Available",
+        answer:
+            "We provide Jain-friendly choices with no onion and no garlic options wherever applicable, ensuring purity without compromising on taste.",
+    },
+    {
+        question: "Trusted by Customers for Consistency",
+        answer:
+            "Our customers choose us for consistent taste, reliable quality, and the satisfaction of enjoying fresh namkeen and sweets every time.",
+    },
+];
+
 const Whyus = () => {
     return (
         <section className="section-about ptb-80">
@@ -25,66 +59,17 @@ const Whyus = () => {
                             </div>
                             <div className="col-6">
                                 <div className="about-right">
+                                    {faqData.map((item, index) => (
+                                        <div className="we-are" key={index}>
+                                            <div className="client-name font-18 font-black gelica-regular">
+                                                {item.question}
+                                            </div>
 
-                                    <div className="we-are">
-                                        <div className="client-name font-18 font-black gelica-regular">
-                                            Quality Assurance
+                                            <div className="client-desc font-18 font-black-80 gilroy-regular mt-1 mt-md-2">
+                                                {item.answer}
+                                            </div>
                                         </div>
-
-                                        <div className="client-desc font-18 font-black-80 gilroy-regular mt-1 mt-md-2">
-                                            Lorem Ipsumis simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's..
-                                        </div>
-                                    </div>
-
-                                    <div className="we-are">
-                                        <div className="client-name font-18 font-black gelica-regular">
-                                            Quality Assurance
-                                        </div>
-
-                                        <div className="client-desc font-18 font-black-80 gilroy-regular mt-1 mt-md-2">
-                                            Lorem Ipsumis simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's..
-                                        </div>
-                                    </div>
-
-                                    <div className="we-are">
-                                        <div className="client-name font-18 font-black gelica-regular">
-                                            Quality Assurance
-                                        </div>
-
-                                        <div className="client-desc font-18 font-black-80 gilroy-regular mt-1 mt-md-2">
-                                            Lorem Ipsumis simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's..
-                                        </div>
-                                    </div>
-
-                                    <div className="we-are">
-                                        <div className="client-name font-18 font-black gelica-regular">
-                                            Quality Assurance
-                                        </div>
-
-                                        <div className="client-desc font-18 font-black-80 gilroy-regular mt-1 mt-md-2">
-                                            Lorem Ipsumis simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's..
-                                        </div>
-                                    </div>
-
-                                    <div className="we-are">
-                                        <div className="client-name font-18 font-black gelica-regular">
-                                            Quality Assurance
-                                        </div>
-
-                                        <div className="client-desc font-18 font-black-80 gilroy-regular mt-1 mt-md-2">
-                                            Lorem Ipsumis simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's..
-                                        </div>
-                                    </div>
-
-                                    <div className="we-are">
-                                        <div className="client-name font-18 font-black gelica-regular">
-                                            Quality Assurance
-                                        </div>
-
-                                        <div className="client-desc font-18 font-black-80 gilroy-regular mt-1 mt-md-2">
-                                            Lorem Ipsumis simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's..
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>

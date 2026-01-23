@@ -77,7 +77,7 @@ const Industryserve = () => {
                                 className=""
                                 style={{ maxWidth: "900px", margin: "auto" }}
                             >
-                                Trackzer Switchgears Pvt. Ltd. serves industries like
+                                Jain Namkeen Switchgears Pvt. Ltd. serves industries like
                                 manufacturing, utilities, oil & gas, and services, providing
                                 reliable power panels and industrial automation solutions for
                                 optimal efficiency.

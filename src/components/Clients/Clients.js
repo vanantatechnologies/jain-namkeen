@@ -13,37 +13,38 @@ import leftarrow from "../../assets/img/left-arrow.svg";
 const clientData = [
     {
         image: abb,
-        imageAlt: "ABB Logo",
-        name: "Sharmila Patil",
+        imageAlt: "Client Logo",
+        name: "Rohit Mehta",
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Jain Namkeen & Sweets has the perfect balance of taste and freshness. Their namkeen is always crispy and full of flavor, and the sweets are absolutely delicious.",
         location: "Ahmedabad",
     },
     {
         image: abb,
-        imageAlt: "ABB Logo",
-        name: "Sharmila Patil",
+        imageAlt: "Client Logo",
+        name: "Neha Shah",
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        location: "Ahmedabad",
+            "The quality is consistently excellent. I especially love their Jain-friendly options—great taste, hygienic packing, and always fresh delivery.",
+        location: "Surat",
     },
     {
         image: abb,
-        imageAlt: "ABB Logo",
-        name: "Sharmila Patil",
+        imageAlt: "Client Logo",
+        name: "Amit Patel",
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        location: "Ahmedabad",
+            "Best place for authentic namkeen and sweets. Their products are perfect for festivals and family functions. Everyone in my home loves the taste.",
+        location: "Vadodara",
     },
     {
         image: abb,
-        imageAlt: "ABB Logo",
-        name: "Sharmila Patil",
+        imageAlt: "Client Logo",
+        name: "Priya Desai",
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        location: "Ahmedabad",
+            "Amazing variety and premium quality. The sweets are rich in taste and the namkeen stays fresh for a long time. Highly recommended!",
+        location: "Rajkot",
     },
 ];
+
 
 /* =========================
    Custom Arrows
@@ -121,7 +122,7 @@ const Clients = () => {
     };
 
     return (
-        <section className="ptb-80 bg-primary-5 bglight">
+        <section className="ptb-80 bg-primary-5 bglight position-relative">
             <div className="container custom-container">
                 <div className="row">
                     <div className="col-md-12">
@@ -154,6 +155,9 @@ const Clients = () => {
                         ))}
                     </Slider>
                 </div>
+            </div>
+            <div className="patterns-top">
+                <div className="pattern-design"></div>
             </div>
         </section>
     );

@@ -82,7 +82,7 @@ const TopSelling = () => {
     };
 
     return (
-        <section className="ptb-80 bg-primary-5 bglight">
+        <section className="ptb-80 bg-primary-5 bglight position-relative">
             <div className="container custom-container">
                 <div className="row">
                     <div className="col-md-6">
@@ -91,7 +91,7 @@ const TopSelling = () => {
                         </h2>
                     </div>
                     <div className="col-md-6">
-                        <div className="">Custom Arrows Code</div>
+                        <div className="d-none">Custom Arrows Code</div>
                     </div>
                 </div>
                 <div className="row">
@@ -138,8 +138,9 @@ const TopSelling = () => {
                         <a href="/about" className="font-18 gilroy-medium common-primary-btn mt-4 mt-md-5">View all products</a>
                     </div>
                 </div>
-
-
+            </div>
+            <div className="patterns-top">
+                <div className="pattern-design"></div>
             </div>
         </section>
     );
