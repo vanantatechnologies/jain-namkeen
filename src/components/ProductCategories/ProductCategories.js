@@ -87,7 +87,7 @@ const ProductCategories = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <h2 className="font-50 font-black gelica-regular mb-40">
-                            Product <span className="font-primary">Categories</span>
+                            Related <span className="font-primary">Products</span>
                         </h2>
                     </div>
                     <div className="col-md-6">
@@ -135,7 +135,7 @@ const ProductCategories = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <a href="/about" className="font-18 gilroy-medium common-primary-btn mt-4 mt-md-5">View all products</a>
+                        <a href="/products" className="font-18 gilroy-medium common-primary-btn mt-4 mt-md-5">View all products</a>
                     </div>
                 </div>
             </div>

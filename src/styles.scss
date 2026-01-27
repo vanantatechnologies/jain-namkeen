@@ -216,50 +216,53 @@ body {
     padding-bottom: 40px;
   }
 }
-
-.font-60 {
-  font-size: 60px;
-  line-height: 70px;
-  letter-spacing: -3px;
-  @media only screen and (max-width: 1599px) {
-    font-size: 44px;
-    line-height: 54px;
+.font-70 {
+  font-size: 70px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  @media (max-width: 1599px) {
+    font-size: 60px;
+    line-height: 70px;
   }
-  @media only screen and (max-width: 1199px) {
+  @media (max-width: 1199px) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  @media (max-width: 991px) {
     font-size: 40px;
     line-height: 50px;
   }
-  @media only screen and (max-width: 991px) {
-    font-size: 38px;
-    line-height: 48px;
-  }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     font-size: 34px;
     line-height: 44px;
   }
 }
-
 .font-50 {
   font-size: 50px;
   line-height: 60px;
-  letter-spacing: -0.5px;
-  @media only screen and (max-width: 1599px) {
+  letter-spacing: -1.5px;
+
+  @media (max-width: 1599px) {
     font-size: 44px;
     line-height: 54px;
   }
-  @media only screen and (max-width: 1199px) {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  @media only screen and (max-width: 991px) {
+
+  @media (max-width: 1199px) {
     font-size: 38px;
     line-height: 48px;
   }
-  @media only screen and (max-width: 767px) {
+
+  @media (max-width: 991px) {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 42px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 38px;
   }
 }
+
 
 .font-18 {
   font-size: 18px;
@@ -279,12 +282,31 @@ body {
 }
 .font-24 {
   font-size: 24px;
-  line-height: 30px;
-  @media only screen and (max-width: 767px) {
+  line-height: 34px;
+  letter-spacing: -0.5px;
+
+  @media (max-width: 1599px) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 1199px) {
     font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
     line-height: 26px;
   }
 }
+
+
 .font-12 {
   font-size: 12px;
   line-height: 18px;
@@ -315,7 +337,7 @@ body {
 .common-primary-btn{
   background-color: var(--primary);
   padding: 12px 25px;
-  border-radius: 30px;
+  border-radius: var(--radius-10);
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -325,6 +347,9 @@ body {
     background-color: var(--primary-light);
   }
 
+}
+button:not(:disabled){
+  border: none !important;
 }
 /*-- common css end --*/
 

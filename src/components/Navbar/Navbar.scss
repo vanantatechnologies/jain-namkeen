@@ -56,7 +56,7 @@
           }
           &:nth-child(5) {
             background-color: var(--white);
-            border-radius: 30px;
+            border-radius: var(--radius-10);
             border: 1px solid var(--black);
             transition: var(--transition);
             &:hover{
@@ -72,7 +72,7 @@
           }
           &:nth-child(6) {
             background-color: #000;
-            border-radius: 30px;
+            border-radius: var(--radius-10);
             .navbar-link{
               color: var(--white);
             }

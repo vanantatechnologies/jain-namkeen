@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import Faq from "../../components/Faq/Faq";
-import Clients from "../../components/Clients/Clients";
+// import Clients from "../../components/Clients/Clients";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import TopSelling from "../../components/TopSelling/TopSelling";
 import Footer from "../../components/Footer/Footer";
@@ -22,7 +22,7 @@ const Home = () => {
             <Whyus/>
             <ProductCategories/>
             <Faq/>
-            <Clients/>
+            {/*<Clients/>*/}
             <Footer/>
             <Testimonials/>
         </React.Fragment>
