@@ -12,6 +12,30 @@ import "react-accessible-accordion/dist/fancy-example.css";
 // -- JSON FAQ Data --
 const faqData = [
     {
+        question: "Do you use palm oil or preservatives in your products?",
+        answer:
+            "No. We do not use palm oil or any preservatives. All our products are prepared using pure groundnut oil and cottonseed oil in an appropriate ratio, ensuring quality and authenticity."
+    },
+    {
+        question: "How can I place an order?",
+        answer:
+            'You can place an order by sending a message on our WhatsApp number <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener noreferrer">+91 9XXXXXXXXX</a> with the list of items, required quantities, and complete delivery address. Orders are usually delivered within 3–5 working days.'
+    },
+    {
+        question: "What is the shelf life of your products?",
+        answer:
+            "The shelf life of all our products is 2 months when stored in a cool, dry place."
+    },
+    {
+        question: "Do you accept bulk or wholesale orders?",
+        answer:
+            'Yes, we accept bulk and wholesale orders. For bulk inquiries, please contact us via WhatsApp at <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener noreferrer">+91 9XXXXXXXXX</a> or email us at <a href="mailto:contact@yourbrandname.com">contact@yourbrandname.com</a>.'
+    }
+];
+
+
+/*const faqData = [
+    {
         question: "What types of namkeen does Jain Namkeen manufacture?",
         answer:
             "Jain Namkeen manufactures a wide variety of traditional Indian namkeen, including spicy mixtures, sev, bhujia, chivda, fried snacks, and regional specialty namkeen."
@@ -46,7 +70,7 @@ const faqData = [
         answer:
             "Namkeen should be stored in a cool, dry place in airtight packaging to maintain freshness and crispness."
     }
-];
+];*/
 
 
 const Faq = () => {
@@ -79,7 +103,7 @@ const Faq = () => {
                                         <AccordionItem
                                             key={index}
                                             uuid={index}
-                                            className={`custom-accordion-item mb-3 bglight ${
+                                            className={`custom-accordion-item bglight ${
                                                 activeIndex === index ? "active" : ""
                                             }`}
                                         >

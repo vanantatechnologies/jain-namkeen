@@ -1,14 +1,14 @@
 import React from 'react';
-import './AboutUs.scss';
+import './Gallery.scss';
 import InnerBanner from "../../components/InnerBanner/InnerBanner";
 
 
-const AboutUs = () => {
+const Gallery = () => {
     return (
         <React.Fragment>
-            <InnerBanner title="About us" />
+            <InnerBanner title="Gallery" />
         </React.Fragment>
     );
 };
 
-export default AboutUs;
+export default Gallery;

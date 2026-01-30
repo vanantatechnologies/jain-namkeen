@@ -11,7 +11,7 @@
     z-index: 999;
     width: 100%;
     max-width: 1440px;
-    padding: 0.3rem 0;
+    padding: 0.3rem 15px;
     .navbar-logo {
       a{
         display: block;
@@ -160,3 +160,9 @@
   }
 }
 
+
+
+.navbar-link.active {
+  color: #e11d48; // example active color
+  font-weight: 600;
+}

@@ -7,6 +7,7 @@ import phoneIcon from "../../assets/img/svg/phone.svg";
 import emailIcon from "../../assets/img/svg/email.svg";
 import globeIcon from "../../assets/img/svg/globe.svg";
 import buildingIcon from "../../assets/img/svg/building.svg";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -42,21 +43,32 @@ const Footer = () => {
                                             <div className="quick-contact">
                                                 <ul className="list-unstyled">
                                                     <li>
-                                                        <a className="font-18 text-white gilroy-regular text-decoration-none" href="#home">Home</a>
+                                                        <Link to="/" className="font-18 text-white gilroy-regular text-decoration-none">
+                                                            Home
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a className="font-18 text-white gilroy-regular text-decoration-none" href="#about">About us</a>
+                                                        <Link to="/about" className="font-18 text-white gilroy-regular text-decoration-none">
+                                                            About us
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a className="font-18 text-white gilroy-regular text-decoration-none" href="#products">Products</a>
+                                                        <Link to="/products" className="font-18 text-white gilroy-regular text-decoration-none">
+                                                            Products
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a className="font-18 text-white gilroy-regular text-decoration-none" href="#gallery">Gallery</a>
+                                                        <Link to="/gallery" className="font-18 text-white gilroy-regular text-decoration-none">
+                                                            Gallery
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a className="font-18 text-white gilroy-regular text-decoration-none" href="#faq">Contact us</a>
+                                                        <Link to="/contact" className="font-18 text-white gilroy-regular text-decoration-none">
+                                                            Contact us
+                                                        </Link>
                                                     </li>
                                                 </ul>
+
                                             </div>
                                         </div>
                                     </div>
@@ -141,7 +153,8 @@ const Footer = () => {
                                                         </span>
 
                                                         <div className="font-16 text-white">
-                                                            Inside Vegetable Market, Outside Delhi Darwaja, Ahmedabad-1
+                                                            In Lalakaka Sabji Market, Outside Delhi Darwaja, Dudheshwar Rd,
+                                                            Ahmedabad – 380004
                                                         </div>
                                                     </li>
                                                     <li className="mt-3">
@@ -154,7 +167,7 @@ const Footer = () => {
                                                         </span>
 
                                                         <div className="font-16 text-white">
-                                                            Inside Vegetable Market, Outside Delhi Darwaja, Ahmedabad-1
+                                                            G-44, Ashta Mangal Complex, Near HDFC Bank, Shahibaug Rd, Ahmedabad – 380004
                                                         </div>
                                                     </li>
                                                 </ul>

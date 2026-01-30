@@ -1,6 +1,21 @@
 .section-home-banner{
   line-height: 0;
-  background-color: #2A3086;
+  //background-color: #2A3086;
   height: 75vh;
   align-content: center;
+  background: url("../../assets/img/Banner-new-light.png") no-repeat;
+  background-size: cover;
+  .main-banner{
+    img{
+      @media only screen and (max-width: 767px) {
+        max-width: 250px;
+        margin: 25px 0 0;
+      }
+    }
+  }
+  .home-banner{
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 50px;
+    }
+  }
 }

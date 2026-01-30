@@ -1,0 +1,26 @@
+.contct-us-form{
+    padding: 20px 25px;
+    background-color: var(--bglight);
+    border: 1px solid #e6e6e6;
+    border-radius: var(--radius-10);
+    height: 100%;
+    @media only screen and (max-width: 767px) {
+        padding: 25px 15px 25px 15px;
+    }
+    h2{
+        margin-bottom: 25px;
+    }
+    input:focus{
+        outline: none;
+    }
+    .form-control-custom{
+        padding: 1rem 0.8rem 1rem 0.8rem;
+    }
+}
+.custom-gap {
+    --bs-gutter-x: 15px; /* horizontal gap */
+    --bs-gutter-y: 15px; /* vertical gap */
+}
+input{
+    margin-bottom: 0;
+}

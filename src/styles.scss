@@ -62,7 +62,7 @@ time, mark, audio, video {
 .mb-40{
   margin-bottom: 40px;
   @media only screen and (max-width: 767px) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 /*-- variables end --*/
@@ -136,7 +136,7 @@ time, mark, audio, video {
   url('../src/assets/fonts/Gelica-SemiBoldItalic.woff') format('woff'),
   url('../src/assets/fonts/Gelica-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -245,6 +245,7 @@ body {
   @media (max-width: 1599px) {
     font-size: 44px;
     line-height: 54px;
+    letter-spacing: -0.75px;
   }
 
   @media (max-width: 1199px) {
@@ -288,8 +289,28 @@ body {
   @media (max-width: 1599px) {
     font-size: 22px;
     line-height: 32px;
+    letter-spacing: 0;
   }
 
+  @media (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /*@media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 26px;
+  }*/
+}
+
+.font-22{
+  font-size: 22px;
+  line-height: 30px;
   @media (max-width: 1199px) {
     font-size: 20px;
     line-height: 30px;
@@ -305,6 +326,9 @@ body {
     line-height: 26px;
   }
 }
+
+
+
 
 
 .font-12 {
@@ -337,12 +361,13 @@ body {
 .common-primary-btn{
   background-color: var(--primary);
   padding: 12px 25px;
-  border-radius: var(--radius-10);
+  border-radius: var(--radius-5);
   display: inline-block;
   text-align: center;
   text-decoration: none;
   color: var(--white);
   transition: var(--transition);
+  text-transform: uppercase;
   &:hover{
     background-color: var(--primary-light);
   }

@@ -57,7 +57,7 @@ const AllProducts = () => {
                                 </h3>
                             </div>
 
-                            <div className="filter-option-center">
+                            <div className="filter-option-center d-none">
                                 {["all", "medium", "spicy"].map(item => (
                                     <label key={item} className="custom-radio">
                                         <input
@@ -79,7 +79,7 @@ const AllProducts = () => {
                                 ))}
                             </div>
 
-                            <div className="filter-option-right">
+                            <div className="filter-option-right ms-auto">
                                 <input
                                     type="text"
                                     placeholder="Search products..."
@@ -99,7 +99,7 @@ const AllProducts = () => {
                 {/* PRODUCTS GRID */}
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="product-slider">
+                        <div className="all-product">
                             {visibleProducts.map(product => (
                                 <div key={product.id} className="product-item">
                                     <div className="product-top position-relative">

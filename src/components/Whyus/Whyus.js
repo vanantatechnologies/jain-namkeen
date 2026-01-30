@@ -47,7 +47,7 @@ const Whyus = () => {
                                     Why <span className="font-primary">us</span>
                                 </h2>
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 col-sm-6 mb-4 mb-md-0">
                                 <div className="about-left">
                                     <img
                                         src={jainstore}
@@ -57,7 +57,7 @@ const Whyus = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 col-sm-6">
                                 <div className="about-right">
                                     {faqData.map((item, index) => (
                                         <div className="we-are" key={index}>

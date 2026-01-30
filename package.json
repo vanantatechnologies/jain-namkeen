@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
@@ -12,10 +13,9 @@
     "react-accessible-accordion": "^5.0.1",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.8.2",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^7.13.0",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.31.0",
-    "sass": "^1.91.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
@@ -42,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.97.3",
+    "sass-loader": "^16.0.6"
   }
 }

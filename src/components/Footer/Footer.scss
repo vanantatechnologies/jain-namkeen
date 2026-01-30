@@ -77,7 +77,6 @@
                     font-size: 16px;
                     line-height: 30px;
                     font-weight: 400;
-                    letter-spacing: -0.2px;
                     padding: 2px 0;
                     display: block;
                     color: var(--white);
@@ -123,7 +122,6 @@
                     font-size: 16px;
                     line-height: 30px;
                     font-weight: 400;
-                    letter-spacing: -0.2px;
                     display: block;
                     color: var(--white);
                     text-decoration: none;
@@ -138,8 +136,46 @@
         }
       }
     }
-
     @media (max-width: 767px) {
+      .footer-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+
+        .footer-left,
+        .footer-right {
+          width: 100%;
+        }
+
+        .footer-right {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+
+          .inner-box {
+            .footer-menus{
+              h4{
+                margin-bottom: 10px;
+              }
+            }
+            &:nth-child(1){
+              width: 40%;
+            }
+            &:nth-child(2) {
+              width: 60%;
+            }
+
+            &:nth-child(3) {
+              width: 100%;
+              flex-basis: 100%;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 374px) {
       .footer-container {
         flex-direction: column;
         width: 100%;
@@ -151,19 +187,30 @@
         }
 
         .footer-right {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1rem;
+          display: block;
+          //flex-wrap: wrap;
+          gap: 0;
 
           .inner-box {
-            &:nth-child(1),
+            margin-bottom: 25px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+            .footer-menus{
+              h4{
+                margin-bottom: 10px;
+              }
+            }
+            &:nth-child(1){
+              width: 100%;
+            }
             &:nth-child(2) {
-              width: 50%;
+              width: 100%;
             }
 
             &:nth-child(3) {
               width: 100%;
-              flex-basis: 100%;
+              //flex-basis: 100%;
             }
           }
         }

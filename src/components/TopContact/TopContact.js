@@ -4,7 +4,7 @@ import phoneIcon from "../../assets/img/svg/phone.svg";
 import emailIcon from "../../assets/img/svg/email.svg";
 const TopContact = () => {
     return (
-        <section className="section-top-contact ptb-80">
+        <section className="section-top-contact">
             <div className="container custom-container">
                 <div className="row justify-content-center">
                     <div className="col-md-12 d-flex justify-content-between">
