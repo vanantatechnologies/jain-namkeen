@@ -1,6 +1,18 @@
 .section-footer{
   background: linear-gradient(-45deg, #004B21 0%, #045B2A 100%);
   padding: 80px 0 0;
+  @media only screen and (max-width: 1599px) {
+    padding-top: 70px;
+  }
+  @media only screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+  @media only screen and (max-width: 991px) {
+    padding-top: 40px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding-top: 40px;
+  }
   .footer-main{
     width: 100%;
     .footer-container {
@@ -55,7 +67,6 @@
             }
           }
           .footer-menus{
-
             h4{
               margin-bottom: 30px;
               position: relative;
@@ -63,11 +74,10 @@
                 content: "";
                 position: absolute;
                 left: 0;
-                bottom: -10px;
-                width: 54px;
+                bottom: -5px;
+                width: 50px;
                 height: 2px;
-                background-color: var(--offwhite);
-                opacity: 0.35;
+                background-color: rgba(255,255,255,0.15);
               }
             }
             .quick-contact{
@@ -90,44 +100,83 @@
                 }
               }
             }
+          }
+          .footer-quick-contact{
+            ul {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              align-items: center;
 
+              li {
+                display: flex;
+                align-items: start;
+                gap: 10px;
+                padding: 5px 0;
 
-            .footer-quick-contact{
-              ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                align-items: center;
-
-                li {
+                .icon-box {
+                  height: 30px;
+                  min-width: 30px;
+                  border-radius: 5px;
                   display: flex;
-                  align-items: start;
-                  gap: 10px;
-                  padding: 5px 0;
-
-                  .icon-box {
-                    height: 30px;
-                    min-width: 30px;
-                    border-radius: 5px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: linear-gradient(-45deg, #004B21 0%, #076a32 100%);
-                    img {
-                      max-width: 16px;
-                      height: auto;
-                    }
+                  align-items: center;
+                  justify-content: center;
+                  background: linear-gradient(-45deg, #004B21 0%, #076a32 100%);
+                  img {
+                    max-width: 16px;
+                    height: auto;
                   }
-                  a {
-                    font-size: 16px;
-                    line-height: 30px;
-                    font-weight: 400;
-                    display: block;
-                    color: var(--white);
-                    text-decoration: none;
-                    &:hover {
-                      opacity: 0.8;
-                    }
+                }
+                a {
+                  font-size: 16px;
+                  line-height: 30px;
+                  font-weight: 400;
+                  display: block;
+                  color: var(--white);
+                  text-decoration: none;
+                  &:hover {
+                    opacity: 0.8;
+                  }
+                }
+              }
+            }
+          }
+          .social-media{
+            ul {
+              list-style: none;
+              padding: 0;
+              margin-top: 6px;
+              align-items: center;
+
+              li {
+                display: inline-flex;
+                align-items: start;
+                gap: 10px;
+                padding: 5px 0;
+                margin-right: 15px;
+                &:last-child{
+
+                }
+
+                .icon-box {
+                  height: 36px;
+                  min-width: 36px;
+                  border-radius: 5px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: linear-gradient(-45deg, #004B21 0%, #076a32 100%);
+                  img {
+                    max-width: 22px;
+                    height: auto;
+                  }
+                }
+                a {
+                  line-height: 0;
+                  text-decoration: none;
+
+                  &:hover {
+                    opacity: 0.8;
                   }
                 }
               }
@@ -155,7 +204,7 @@
           .inner-box {
             .footer-menus{
               h4{
-                margin-bottom: 10px;
+                margin-bottom: 20px;
               }
             }
             &:nth-child(1){

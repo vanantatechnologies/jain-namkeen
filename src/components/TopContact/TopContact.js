@@ -21,7 +21,7 @@ const TopContact = () => {
                                                               loading="lazy"
                                                           />
                                                         </span>
-                                    <a href="tel:+916354973060" className="font-16 text-white gelica-regular text-decoration-none">+91 6354973060</a>
+                                    <a href="tel:+918460300847" className="font-16 text-white gelica-regular text-decoration-none">+91 8460300847</a>
                                 </li>
 
                                 <li className="list-unstyled d-none d-md-flex">

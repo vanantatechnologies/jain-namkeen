@@ -6,7 +6,7 @@ const About = () => {
         <section className="ptb-80">
             <div className="container custom-container">
                 <div className="row justify-content-center">
-                    <div className="col-md-12 col-lg-10">
+                    <div className="col-md-12 col-xl-10">
                         <div className="row">
                             <div className="col-12 col-sm-4">
                                 <h2 className="font-50 font-black gelica-regular mb-40">

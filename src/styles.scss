@@ -34,6 +34,7 @@ time, mark, audio, video {
   --primary: rgba(1, 166, 74, 1);
   --primary-light: rgba(1, 166, 74, 0.9);
   --bglight: rgba(245, 245, 245, 1);
+  --bglightnew: rgba(247, 247, 247, 1);
   --gray-1: rgba(235, 235, 235, 1);
   --gray-5: rgba(0, 0, 0, 0.05);
 
@@ -58,6 +59,9 @@ time, mark, audio, video {
 }
 .bglight{
   background-color: var(--bglight);
+}
+.bglightnew{
+  background-color: var(--bglightnew);
 }
 .mb-40{
   margin-bottom: 40px;
@@ -190,7 +194,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
   .custom-container {
     max-width: 100%;
     width: 100%;
@@ -212,7 +216,7 @@ body {
     padding-bottom: 50px;
   }
   @media only screen and (max-width: 767px) {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
@@ -284,12 +288,9 @@ body {
 .font-24 {
   font-size: 24px;
   line-height: 34px;
-  letter-spacing: -0.5px;
-
   @media (max-width: 1599px) {
     font-size: 22px;
     line-height: 32px;
-    letter-spacing: 0;
   }
 
   @media (max-width: 1199px) {

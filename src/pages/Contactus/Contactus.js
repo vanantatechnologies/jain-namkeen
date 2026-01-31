@@ -5,7 +5,8 @@ import Footer from "../../components/Footer/Footer";
 import phoneIcon from "../../assets/img/svg/phone.svg";
 import emailIcon from "../../assets/img/svg/email.svg";
 import globeIcon from "../../assets/img/svg/globe.svg";
-import jainstore from "../../assets/img/common/jain-store.png";
+import jainChawana from "../../assets/img/common/jain-chawana.webp";
+import jainNamkeen from "../../assets/img/common/jain-namkeen.webp";
 import InquiryForm from "../../components/InquiryForm/InquiryForm";
 
 
@@ -48,7 +49,7 @@ const Contactus = () => {
                                                 <div className="phone-number">
                                                     <a href="tel:+919723535365">+91 97235 35365</a>
                                                     <a href="tel:+917778026236"> +91 77780 26236</a>
-                                                    <a href="tel:+917778028580"> +91 77780 28580</a>
+                                                    {/*<a href="tel:+917778028580"> +91 77780 28580</a>*/}
                                                 </div>
 
                                             </li>
@@ -87,8 +88,8 @@ const Contactus = () => {
 
                                     <div className="inner-two d-none d-lg-block">
                                         <img
-                                            src={jainstore}
-                                            alt="Marquees Jain namkeen"
+                                            src={jainChawana}
+                                            alt="Jain Chawana"
                                             loading="lazy"
                                             className="jain-store img-fluid w-100"
                                         />
@@ -155,8 +156,8 @@ const Contactus = () => {
 
                                     <div className="inner-two d-none d-lg-block">
                                         <img
-                                            src={jainstore}
-                                            alt="Marquees Jain namkeen"
+                                            src={jainNamkeen}
+                                            alt="Jain namkeen"
                                             loading="lazy"
                                             className="jain-store img-fluid w-100"
                                         />

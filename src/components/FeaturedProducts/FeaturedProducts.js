@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./TopSelling.scss";
+import "./FeaturedProducts.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -23,7 +23,7 @@ const productData = [
     { image: abb, imageAlt: "ABB Product", name: "Ratlami sev", orderLink: "/order-now" },
 ];
 
-const TopSelling = () => {
+const FeaturedProducts = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
@@ -33,7 +33,7 @@ const TopSelling = () => {
                 <div className="row mb-40">
                     <div className="col-md-6">
                         <h2 className="font-50 font-black gelica-regular">
-                            Top <span className="font-primary">Selling</span>
+                            Featured <span className="font-primary">Products</span>
                         </h2>
                     </div>
                 </div>
@@ -75,13 +75,13 @@ const TopSelling = () => {
                                     <div className="product-slider">
                                         <div className="product-item">
                                             <div className="product-top position-relative">
-                                                <div className="product-quality d-flex justify-content-between align-items-center">
-                                        <span className="font-12 gilroy-medium text-white bedge-left">
-                                            Top Selling
-                                        </span>
-                                                    <span className="bedge-right">
-                                            <img src={star} alt="rating" />
-                                        </span>
+                                                <div className="d-none product-quality d-flex justify-content-between align-items-center">
+                                                        <span className="font-12 gilroy-medium text-white bedge-left">
+                                                            Top Selling
+                                                        </span>
+                                                                    <span className="bedge-right">
+                                                            <img src={star} alt="rating" />
+                                                        </span>
                                                 </div>
 
                                                 <div className="product-box mx-auto">
@@ -134,4 +134,4 @@ const TopSelling = () => {
     );
 };
 
-export default TopSelling;
+export default FeaturedProducts;

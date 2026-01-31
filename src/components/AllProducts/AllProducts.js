@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import "./AllProducts.scss";
-import abb from "../../assets/img/products/sev.png";
+import abb from "../../assets/img/products/sev-old.png";
 import star from "../../assets/img/star.svg";
 
 /* =========================

@@ -3,8 +3,11 @@
   //background-color: #2A3086;
   height: 75vh;
   align-content: center;
-  background: url("../../assets/img/Banner-new-light.png") no-repeat;
+  background: url("../../assets/img/Banner-new-light.webp") no-repeat;
   background-size: cover;
+  @media only screen and (max-width: 767px) {
+    height: auto;
+  }
   .main-banner{
     img{
       @media only screen and (max-width: 767px) {

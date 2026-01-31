@@ -1,44 +1,66 @@
-.clients-slider {
+.our-gallery{
 
-  .client-item {
-    background-color: var(--white);
-    border: 1px solid var(--gray-5);
+}
+.gallery-slider {
+  .gallery-item {
+    background-color: var(--gray-5);
     border-radius: var(--radius-10);
-    padding: 30px 25px;
     transition: var(--transition);
-    @media only screen and (max-width: 767px) {
-      padding: 20px;
-    }
-    @media only screen and (max-width: 767px) {
-      padding: 15px;
-    }
-    .img-box{
-      max-width: 90px;
-      overflow: hidden;
+    border: 1px solid var(--bglight);
+    .gallery-top{
       border-radius: var(--radius-10);
-      object-fit: fill;
-      @media only screen and (max-width: 1199px) {
-        max-width: 75px;
+      background-color: var(--white);
+
+      .gallery-box{
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        border-radius: var(--radius-10);
+        object-fit: fill;
+        img {
+          max-width: 100%;
+          height: auto;
+          filter: grayscale(0%);
+          transition: var(--transition);
+        }
       }
-      @media only screen and (max-width: 767px) {
-        max-width: 65px;
+      .gallery-bottom{
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: var(--white);
+        border-radius: var(--radius-5);
+
+        .order-now-link{
+          background-color: var(--primary);
+          padding: 12px 25px;
+          border-radius: var(--radius-5);
+          transition: var(--transition);
+          &:hover{
+            background-color: var(--primary-light);
+          }
+        }
       }
-      img {
-        filter: grayscale(0%);
-        transition: var(--transition);
-        max-width: 100%;
-      }
+
     }
+
+
     &:hover{
-      border: 1px solid var(--primary);
-      .img-box{
+      border: 1px solid var(--primary-light);
+      background-color: var(--primary);
+      .gallery-box{
         img{
-          transform: scale(1.05);
+          transform: scale(1.03);
+
         }
       }
     }
+
   }
 }
+
 .custom-arrow {
   display: flex;
   align-items: center;
@@ -80,9 +102,6 @@
   }
 }
 
-.clients-slider{
-
-}
 
 .patterns-top{
   height: 12px;
@@ -99,3 +118,7 @@
 
   }
 }
+
+
+
+

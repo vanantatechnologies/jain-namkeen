@@ -7,6 +7,8 @@ import phoneIcon from "../../assets/img/svg/phone.svg";
 import emailIcon from "../../assets/img/svg/email.svg";
 import globeIcon from "../../assets/img/svg/globe.svg";
 import buildingIcon from "../../assets/img/svg/building.svg";
+import fbIcon from "../../assets/img/common/fb.svg";
+import instaIcon from "../../assets/img/common/insta.svg";
 import {Link} from "react-router-dom";
 
 const Footer = () => {
@@ -68,7 +70,6 @@ const Footer = () => {
                                                         </Link>
                                                     </li>
                                                 </ul>
-
                                             </div>
                                         </div>
                                     </div>
@@ -86,7 +87,7 @@ const Footer = () => {
                                                               loading="lazy"
                                                           />
                                                         </span>
-                                                        <a href="tel:+916354973060">+91 6354973060</a>
+                                                        <a href="tel:+918460300847">+91 8460300847</a>
                                                     </li>
 
                                                     <li>
@@ -116,25 +117,51 @@ const Footer = () => {
                                                             www.jainnamkeen.com
                                                         </a>
                                                     </li>
+
+
+
                                                 </ul>
                                             </div>
 
-                                            {/*<div className="quick-contact">
-                                                <ul className="list-unstyled">
+                                            <div className="social-media">
+                                                <ul>
                                                     <li>
-                                                        <a href="#">Effluent Treatment Plants</a>
+    <span className="icon-box">
+      <a
+          href="https://www.facebook.com/share/17qS2K4pVb/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Jain Namkeen Facebook page"
+      >
+        <img
+            src={fbIcon}
+            alt="Jain Namkeen on Facebook"
+            loading="lazy"
+        />
+      </a>
+    </span>
                                                     </li>
+
                                                     <li>
-                                                        <a href="#">Sewage Treatment Plants</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Water Treatment Plants</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">MVR &amp; ME Evaporation Plants</a>
+    <span className="icon-box">
+      <a
+          href="https://www.instagram.com/jainnamkin?igsh=dDJiMjR3OWx1ZXN0"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Jain Namkeen Instagram profile"
+      >
+        <img
+            src={instaIcon}
+            alt="Jain Namkeen on Instagram"
+            loading="lazy"
+        />
+      </a>
+    </span>
                                                     </li>
                                                 </ul>
-                                            </div>*/}
+                                            </div>
+
+
                                         </div>
                                     </div>
 

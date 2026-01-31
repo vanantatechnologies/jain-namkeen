@@ -1,6 +1,6 @@
 import React from "react";
 import "./Whyus.scss";
-import jainstore from "../../assets/img/common/jain-store.png";
+import jainstore from "../../assets/img/common/jain-chawana-mart.webp";
 
 const faqData = [
     {
@@ -40,7 +40,7 @@ const Whyus = () => {
         <section className="section-about ptb-80">
             <div className="container custom-container">
                 <div className="row justify-content-center">
-                    <div className="col-md-12 col-lg-10">
+                    <div className="col-md-12 col-xl-10">
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h2 className="font-50 font-black gelica-regular mb-40">

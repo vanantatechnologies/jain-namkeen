@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeBanner.scss";
-import ProductBanner from "../../assets/img/banner-product.png";
+import ProductBanner from "../../assets/img/banner-product.webp";
 
 const HomeBanner = () => {
     return (

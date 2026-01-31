@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./Faq.scss";
 import {
     Accordion,
@@ -32,54 +33,17 @@ const faqData = [
             'Yes, we accept bulk and wholesale orders. For bulk inquiries, please contact us via WhatsApp at <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener noreferrer">+91 9XXXXXXXXX</a> or email us at <a href="mailto:contact@yourbrandname.com">contact@yourbrandname.com</a>.'
     }
 ];
-
-
-/*const faqData = [
-    {
-        question: "What types of namkeen does Jain Namkeen manufacture?",
-        answer:
-            "Jain Namkeen manufactures a wide variety of traditional Indian namkeen, including spicy mixtures, sev, bhujia, chivda, fried snacks, and regional specialty namkeen."
-    },
-    {
-        question: "Are Jain Namkeen products made using quality ingredients?",
-        answer:
-            "Yes, all Jain Namkeen products are prepared using carefully selected, high-quality ingredients to ensure consistent taste, freshness, and hygiene."
-    },
-    {
-        question: "Do you offer Jain-friendly or no-onion, no-garlic products?",
-        answer:
-            "Yes, Jain Namkeen offers Jain-friendly namkeen options prepared without onion and garlic, adhering to Jain dietary principles."
-    },
-    {
-        question: "Are your products suitable for bulk or wholesale purchase?",
-        answer:
-            "Yes, Jain Namkeen supplies products for retail, bulk orders, and wholesale distribution, catering to shops, distributors, and corporate requirements."
-    },
-    {
-        question: "How do you ensure hygiene and quality control?",
-        answer:
-            "Our manufacturing process follows strict hygiene standards and quality control measures at every stage, from raw material sourcing to final packaging."
-    },
-    {
-        question: "Do you provide customized namkeen varieties?",
-        answer:
-            "Yes, customized namkeen blends and packaging options can be developed based on specific customer or market requirements."
-    },
-    {
-        question: "How should Jain Namkeen products be stored?",
-        answer:
-            "Namkeen should be stored in a cool, dry place in airtight packaging to maintain freshness and crispness."
-    }
-];*/
-
-
 const Faq = () => {
+    const location = useLocation();
+
+    const isGalleryPage = location.pathname === "/gallery";
+
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
         <React.Fragment>
-            <section className="ptb-80">
-                <div className="container custom-container">
+            <section className={`ptb-80 ${location.pathname === "/gallery" ? "bglight" : ""}`}>
+            <div className="container custom-container">
                     <div className="row">
                         <div className="col-md-12">
                             <h2 className="font-50 font-black gelica-regular text-center mb-40">
@@ -103,7 +67,7 @@ const Faq = () => {
                                         <AccordionItem
                                             key={index}
                                             uuid={index}
-                                            className={`custom-accordion-item bglight ${
+                                            className={`custom-accordion-item bglightnew ${
                                                 activeIndex === index ? "active" : ""
                                             }`}
                                         >
