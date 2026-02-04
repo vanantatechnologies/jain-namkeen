@@ -17,7 +17,7 @@
     .product-top {
       border-radius: var(--radius-10);
       background-color: var(--white);
-      background: url("../../assets/img/products/ss.jpg") no-repeat;
+      background: url("../../assets/img/products/bg/ss.jpg") no-repeat;
       background-size: 120% 120%;
       background-position: 50% 0%;
       animation: bgClockwise 15s linear infinite;
@@ -170,24 +170,5 @@
         width: 15px;
       }
     }
-  }
-}
-
-/* =========================
-   Top Pattern
-========================= */
-.patterns-top {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 12px;
-  line-height: 0;
-
-  .pattern-design {
-    height: 100%;
-    background-image: url("../../assets/img/svg/pattern-green.svg");
-    background-repeat: repeat;
-    background-size: 24px;
-    background-position: top left;
   }
 }

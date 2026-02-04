@@ -5,18 +5,26 @@ import Products from "./pages/Products/Products";
 import Contactus from "./pages/Contactus/Contactus";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Gallery from "./pages/Gallery/Gallery";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "animate.css";
+import WhatsAppButton from "./components/WhatsAppButton";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contactus />} />
-        </Routes>
+        <>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/contact" element={<Contactus />} />
+            </Routes>
+
+            <WhatsAppButton />
+            <Footer />
+        </>
     );
 }
 

@@ -122,7 +122,7 @@ const Clients = () => {
     };
 
     return (
-        <section className="ptb-80 bg-primary-5 bglight position-relative">
+        <section className="ptb-80 bglight position-relative">
             <div className="container custom-container">
                 <div className="row">
                     <div className="col-md-12">
@@ -156,8 +156,9 @@ const Clients = () => {
                     </Slider>
                 </div>
             </div>
-            <div className="patterns-top">
-                <div className="pattern-design"></div>
+
+            <div className="for-gray-slider">
+                <div className="section-with-curve green"></div>
             </div>
         </section>
     );

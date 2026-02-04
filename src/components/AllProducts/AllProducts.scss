@@ -120,12 +120,19 @@
       padding: 10px;
       transition: var(--transition);
       border: 1px solid var(--bglight);
+
+
+
       @media only screen and (max-width: 767px) {
         padding: 5px;
       }
       .product-top{
         border-radius: var(--radius-10);
         background-color: var(--white);
+        background: url("../../assets/img/products/bg/ssp.png") no-repeat;
+        background-size: 120% 120%;
+        background-position: center;
+        animation: bgClockwise 15s linear infinite;
         .product-quality{
           padding: 10px;
           @media only screen and (max-width: 767px) {
@@ -157,13 +164,19 @@
           object-fit: fill;
           padding: 20px 0 15px;
           img {
-            max-width: 200px;
+            max-width: 220px;
             height: auto;
             filter: grayscale(0%);
             display: block;
             text-align: center;
             margin: auto;
             transition: var(--transition);
+            @media only screen and (max-width: 1600px) {
+              max-width: 200px;
+              display: block;
+              text-align: center;
+              margin: auto;
+            }
             @media only screen and (max-width: 1199px) {
               max-width: 190px;
               display: block;
@@ -213,8 +226,7 @@
         background-color: var(--primary);
         .product-box{
           img{
-            transform: scale(1.03) rotate(-3deg);
-
+            transform: scale(1.075) translateY(-10px);
           }
         }
       }
@@ -241,3 +253,18 @@
     }
   }
 }
+
+/* =========================
+   Background Animation
+========================= */
+@keyframes bgClockwise {
+  0%   { background-position: 50% 0%; }
+  25%  { background-position: 100% 50%; }
+  50%  { background-position: 50% 100%; }
+  75%  { background-position: 0% 50%; }
+  100% { background-position: 50% 0%; }
+}
+
+/* =========================
+   Slider Navigation Buttons
+========================= */

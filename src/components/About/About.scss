@@ -1,43 +1,17 @@
-/*
-.clients-slider {
-  .client-item {
-    padding: 10px;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    img {
-      max-width: 100%;
-      max-height: 80px;
-      object-fit: contain;
-      filter: grayscale(0%);
-      transition: var(--transition);
-      border-radius: var(--radius-10);
+.about-us-points{
+  li{
+    position: relative;
+    padding: 4px 0 4px 30px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 18px;
+      height: 18px;
+      background: url('../../assets/img/common/tick.svg') no-repeat center;
+      background-size: contain;
     }
 
-    &:hover img {
-      transform: scale(1.1);
-    }
-  }
-
-  .slick-arrow {
-    z-index: 2;
-    &:before {
-      color: #000; // arrow color
-      font-size: 30px;
-    }
-  }
-
-  .slick-prev {
-    left: -25px;
-  }
-
-  .slick-next {
-    right: -25px;
-  }
-
-  .slick-slide {
-    display: flex;
-    justify-content: center;
   }
 }
-*/

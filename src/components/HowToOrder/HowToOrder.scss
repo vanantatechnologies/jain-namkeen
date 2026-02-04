@@ -1,0 +1,46 @@
+.section-howto-order{
+  .howto-order-left{
+    line-height: 0;
+    .jain-store{
+      border-radius: var(--radius-10);
+      overflow: hidden;
+    }
+  }
+  .howto-order-right{
+    .quick-order{
+      padding: 20px;
+      background-color: var(--bglight);
+      border: 1px solid var(--gray-5);
+      border-radius: var(--radius-10);
+      transition: var(--transition);
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 75px;
+      @media only screen and (max-width: 767px) {
+        padding: 20px 15px;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:hover{
+        border: 1px solid var(--primary-light);
+      }
+      .step-number{
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        border: 1px solid var(--gray-5);
+        border-radius: var(--radius-5);
+        cursor: pointer;
+        transition: var(--transition);
+        color: var(--white);
+      }
+    }
+  }
+}

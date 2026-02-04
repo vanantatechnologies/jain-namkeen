@@ -41,3 +41,85 @@
 
   }
 }
+/* =============================
+   WE STORY SECTION
+============================= */
+
+.we-story {
+  position: relative;
+}
+
+/* LEFT IMAGE */
+.sticky-image {
+  position: sticky;
+  top: 100px;
+}
+
+.story-image {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.fade-up {
+  animation: fadeUp 0.45s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.story-item {
+  min-height: 40vh;
+  align-items: start;
+  font-size: 18px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sticky-image {
+    position: relative;
+    top: auto;
+    margin-bottom: 30px;
+  }
+
+  .story-item {
+    min-height: auto;
+    padding: 30px 0;
+  }
+}
+
+
+
+.section-half-circle{
+  width: 100%;
+  .half-circle-main{
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid red;
+    .half-circle-top{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      position: absolute;
+      left: 50%;
+
+    }
+  }
+}
+
+
+
+
+
+

@@ -28,7 +28,7 @@ const TopSelling = () => {
     const nextRef = useRef(null);
 
     return (
-        <section className="ptb-80 bg-primary-5 bglight position-relative">
+        <section className="ptb-80 bglight position-relative">
             <div className="container custom-container">
                 <div className="row mb-40">
                     <div className="col-md-6">
@@ -126,9 +126,8 @@ const TopSelling = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="patterns-top">
-                <div className="pattern-design"></div>
+            <div className="for-gray-slider">
+                <div className="section-with-curve green"></div>
             </div>
         </section>
     );

@@ -381,3 +381,91 @@ button:not(:disabled){
 
 
 
+
+/*
+
+.whatsapp-number{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+}
+*/
+
+
+/*-------------------------------------
+  Section: Whatsapp * Scroll to top
+--------------------------------------*/
+.whatsapp-number{
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  border: 2px solid rgba(255,255,255,0.18);
+  background: linear-gradient(-45deg, #004B21 0%, #076a32 100%);
+  @media (max-width: 420px) {
+    bottom: 0.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+}
+
+
+
+/*--- this is for half circle in website start ---*/
+.section-with-curve {
+  width: 100%;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+  background-size: 25px 25px;
+  background-repeat: repeat-x;
+}
+
+.section-with-curve.white {
+  background-color: #ffffff;
+  background-size: 28px 26px;
+  background-image: radial-gradient(circle at 11.5px 0, #ffffff 11.5px, transparent 12px);
+}
+
+.section-with-curve.white {
+  background-color: transparent;
+  background-size: 28px 26px;
+  background-image: radial-gradient(circle at 11.5px 0, var(--white) 11.5px, transparent 12px);
+}
+
+
+.section-with-curve.green {
+  background-color: transparent;
+  background-size: 28px 26px;
+  background-image: radial-gradient(circle at 11.5px 0, var(--primary) 11.5px, transparent 12px);
+}
+
+.section-with-curve.gray {
+  background-color: #e5e5e5;
+  background-size: 28px 26px;
+  background-image: radial-gradient(circle at 12.5px 0, #e5e5e5 11.5px, transparent 12px);
+}
+
+
+
+.for-gray-slider{
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  width: 100%;
+}
+
+/*--- this is for half circle in website end ---*/

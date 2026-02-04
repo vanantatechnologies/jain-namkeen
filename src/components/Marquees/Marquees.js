@@ -35,11 +35,9 @@ const Marquees = () => {
                     </div>
                 </div>
             </div>
-            <div className="patterns-top">
-                <div className="pattern-design"></div>
-            </div>
-            <div className="patterns-bottom">
-                <div className="pattern-design"></div>
+
+            <div className="for-inner-banner">
+                <div className="section-with-curve white"></div>
             </div>
         </section>
     );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Whyus.scss";
 import jainstore from "../../assets/img/common/jain-chawana-mart.webp";
 
@@ -36,19 +36,55 @@ const faqData = [
 ];
 
 const Whyus = () => {
+    const sectionRef = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setVisible(true);
+                    observer.disconnect(); // animate once
+                }
+            },
+            { threshold: 0.25 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <section className="section-about ptb-80">
+        <section className="section-about ptb-80" ref={sectionRef}>
             <div className="container custom-container">
                 <div className="row justify-content-center">
                     <div className="col-md-12 col-xl-10">
                         <div className="row">
+                            {/* TITLE */}
                             <div className="col-12 text-center">
-                                <h2 className="font-50 font-black gelica-regular mb-40">
+                                <h2
+                                    className={`font-50 font-black gelica-regular mb-40 ${
+                                        visible
+                                            ? "animate__animated animate__fadeInUp"
+                                            : ""
+                                    }`}
+                                >
                                     Why <span className="font-primary">us</span>
                                 </h2>
                             </div>
+
+                            {/* IMAGE */}
                             <div className="col-12 col-sm-6 mb-4 mb-md-0">
-                                <div className="about-left">
+                                <div
+                                    className={`about-left ${
+                                        visible
+                                            ? "animate__animated animate__fadeInUp"
+                                            : ""
+                                    }`}
+                                >
                                     <img
                                         src={jainstore}
                                         alt="Marquees Jain namkeen"
@@ -57,10 +93,24 @@ const Whyus = () => {
                                     />
                                 </div>
                             </div>
+
+                            {/* CONTENT */}
                             <div className="col-12 col-sm-6">
                                 <div className="about-right">
                                     {faqData.map((item, index) => (
-                                        <div className="we-are" key={index}>
+                                        <div
+                                            className={`we-are ${
+                                                visible
+                                                    ? "animate__animated animate__fadeInUp"
+                                                    : ""
+                                            }`}
+                                            style={{
+                                                animationDelay: visible
+                                                    ? `${index * 0.15}s`
+                                                    : "0s",
+                                            }}
+                                            key={index}
+                                        >
                                             <div className="client-name font-18 font-black gelica-regular">
                                                 {item.question}
                                             </div>

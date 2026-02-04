@@ -1,6 +1,7 @@
 .section-footer{
   background: linear-gradient(-45deg, #004B21 0%, #045B2A 100%);
   padding: 80px 0 0;
+  overflow: hidden;
   @media only screen and (max-width: 1599px) {
     padding-top: 70px;
   }
@@ -90,6 +91,7 @@
                     padding: 2px 0;
                     display: block;
                     color: var(--white);
+                    text-decoration: none;
                     @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
                     }
@@ -299,7 +301,7 @@
 }
 
 
-.patterns{
+/*.patterns{
   height: 12px;
   position: absolute;
   width: 100%;
@@ -312,4 +314,10 @@
     background-position: top left;
     height: 100%;
   }
+}*/
+
+.for-footer{
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

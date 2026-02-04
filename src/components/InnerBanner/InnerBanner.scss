@@ -19,3 +19,13 @@
     height: 180px;
   }
 }
+
+.for-inner-banner{
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  .section-with-curve{
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,78 @@
+.our-journey-section{
+  .journey-slider{
+    padding: 30px 15px;
+    border: 1px solid #01A64AFF;
+    border-radius: var(--radius-10);
+    &:hover{
+      background-color: var(--primary);
+      .journey-item{
+        div, p{
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+/* =========================
+   Slider Navigation Buttons
+========================= */
+.all-next-prev-buttons {
+  position: absolute;
+  top: -90px;
+  right: 15px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: max-content;
+
+  @media (max-width: 1499px) {
+    top: -80px;
+    right: 12px;
+  }
+
+  @media (max-width: 991px) {
+    top: -76px;
+  }
+
+  @media (max-width: 767px) {
+    top: -57px;
+  }
+
+  .custom-arrows {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border: 1px solid var(--gray-5);
+    border-radius: var(--radius-5);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--white);
+
+    @media (max-width: 1499px) {
+      height: 44px;
+      width: 44px;
+    }
+
+    @media (max-width: 991px) {
+      height: 40px;
+      width: 40px;
+    }
+
+    @media (max-width: 767px) {
+      height: 30px;
+      width: 30px;
+    }
+
+    .arrow-size {
+      width: 22px;
+
+      @media (max-width: 767px) {
+        width: 15px;
+      }
+    }
+  }
+}
