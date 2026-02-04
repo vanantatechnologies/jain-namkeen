@@ -1,39 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./HowToOrder.scss";
-import jainstore from "../../assets/img/common/jain-chawana-mart.webp";
 
-const faqData = [
-    {
-        question: "Authentic Taste & Traditional Recipes",
-        answer:
-            "At Jain Namkeen & Sweets, we follow time-tested recipes to deliver authentic taste in every namkeen and sweet, loved by all age groups.",
-    },
-    {
-        question: "Premium Quality Ingredients",
-        answer:
-            "We use carefully selected ingredients and maintain consistent quality to ensure rich flavor, freshness, and the perfect crunch in every bite.",
-    },
-    {
-        question: "Hygienic Preparation & Packaging",
-        answer:
-            "Our products are prepared under hygienic conditions and packed with care to maintain freshness, taste, and quality from our kitchen to your home.",
-    },
-    {
-        question: "Wide Variety of Namkeen & Sweets",
-        answer:
-            "From spicy mixtures and crispy snacks to delicious traditional sweets, we offer a wide range of options for daily cravings and festive celebrations.",
-    },
-    {
-        question: "Jain-Friendly Options Available",
-        answer:
-            "We provide Jain-friendly choices with no onion and no garlic options wherever applicable, ensuring purity without compromising on taste.",
-    },
-    {
-        question: "Trusted by Customers for Consistency",
-        answer:
-            "Our customers choose us for consistent taste, reliable quality, and the satisfaction of enjoying fresh namkeen and sweets every time.",
-    },
-];
 
 const HowToOrder = () => {
     const sectionRef = useRef(null);
