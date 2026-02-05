@@ -1,21 +1,18 @@
 .section-inner-banner{
-  height: 400px;
+  height: 300px;
   align-content: center;
-  background: url("../../assets/img/inner-banner-new-light-400.png") no-repeat;
+  background: url("../../assets/img/inn-banner.webp") no-repeat;
   background-size: cover;
   @media only screen and (max-width: 1499px) {
-    height: 350px;
-  }
-  @media only screen and (max-width: 1199px) {
     height: 300px;
   }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1199px) {
     height: 250px;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     height: 200px;
   }
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 767px) {
     height: 180px;
   }
 }

@@ -1,42 +1,29 @@
 import React from 'react';
 import './Gallery.scss';
-import { Helmet } from "react-helmet-async";
 import InnerBanner from "../../components/InnerBanner/InnerBanner";
 import WeAre from "../../components/WeAre/WeAre";
 import Faq from "../../components/Faq/Faq";
+import SEO from "../../components/SEO";
 
 
 const Gallery = () => {
     return (
         <React.Fragment>
-            <Helmet>
-                <title>Gallery | Jain Namkeen – Snacks, Factory & Packaging</title>
-
-                <meta
-                    name="description"
-                    content="Browse the Jain Namkeen gallery showcasing our snacks, manufacturing process, quality packaging, and brand journey."
-                />
-
-                <meta
-                    name="keywords"
-                    content="Jain Namkeen gallery, namkeen images, snack factory, Indian snacks photos"
-                />
-
-                <link rel="canonical" href="http://www.jainnamkin.com/gallery" />
-
-                {/* Open Graph */}
-                <meta property="og:title" content="Gallery | Jain Namkeen" />
-                <meta
-                    property="og:description"
-                    content="Explore photos of Jain Namkeen products, factory, and packaging."
-                />
-                <meta property="og:url" content="http://www.jainnamkin.com/gallery" />
-                <meta
-                    property="og:image"
-                    content="http://www.jainnamkin.com/images/gallery-og.jpg"
-                />
-                <meta property="og:type" content="website" />
-            </Helmet>
+            {/* ================= START SEO ================= */}
+            <SEO
+                title="Gallery | Jain Namkin – Authentic Namkin & Snacks"
+                description="View the delicious and traditional Indian snacks made by Jain Namkin. See our varieties of sev, gathiya, farsan, wafers, and more."
+                keywords="Jain Namkin gallery, Indian snacks images, Namkin, sev, gathiya, farsan"
+                url="https://www.jainnamkin.com/gallery"
+                image="https://www.jainnamkin.com/images/gallery-og.jpg"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "CollectionPage",
+                    "name": "Jain Namkin Gallery",
+                    "url": "https://www.jainnamkin.com/gallery"
+                }}
+            />
+            {/* ================= END SEO ================= */}
             <InnerBanner title="Gallery" />
             <WeAre/>
             <Faq/>

@@ -38,20 +38,20 @@ const About = () => {
                                             : ""
                                     }`}
                                 >
-                                    About <span className="font-primary">Jain Namkeen</span>
+                                    About <span className="font-primary">Jain Namkin</span>
                                 </h2>
                             </div>
 
                             {/* CONTENT */}
                             <div className="col-12 col-sm-8">
                                 <div
-                                    className={`font-22 gelica-medium-italic mb-2 mb-md-3 font-primary ${
+                                    className={`font-22 gelica-medium-italic mb-2 mb-md-3 font-primary mt--10 ${
                                         isVisible
                                             ? "animate__animated animate__fadeInUp "
                                             : ""
                                     }`}
                                 >
-                                    Authentic Namkeen Since 1948
+                                    Authentic Namkin Since 1948
                                 </div>
 
                                 <p
@@ -61,14 +61,14 @@ const About = () => {
                                             : ""
                                     }`}
                                 >
-                                    Founded in 1948, Jain Chawana Mart is a name synonymous with authenticity, tradition, and unmatched taste. What began as a humble cart in Ahmedabad has grown into one of the city’s most iconic namkeen destinations—trusted across generations.
+                                    Founded in 1948, Jain Chawana Mart is a name synonymous with authenticity, tradition, and unmatched taste. What began as a humble cart in Ahmedabad has grown into one of the city’s most iconic Namkin destinations—trusted across generations.
                                 </p>
                                 <ul className={`list-unstyled about-us-points ${
                                     isVisible
                                         ? "animate__animated animate__fadeInUp animate__delay-1s"
                                         : ""
                                 }`}>
-                                    <li className="font-18 font-black-80 gilroy-regular">Over 75 years of authentic namkeen legacy</li>
+                                    <li className="font-18 font-black-80 gilroy-regular">Over 75 years of authentic Namkin legacy</li>
                                     <li className="font-18 font-black-80 gilroy-regular">Original recipes crafted with honesty & care</li>
                                     <li className="font-18 font-black-80 gilroy-regular">Iconic flavors loved across generations</li>
                                     <li className="font-18 font-black-80 gilroy-regular">Two original outlets, countless loyal customers</li>

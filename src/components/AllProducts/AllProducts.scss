@@ -5,7 +5,6 @@
     width: 100%;
     background-color: var(--bglight);
     padding: 15px;
-    margin-bottom: 40px;
     border-radius: var(--radius-10);
     .filter-option-left{
       width: 50%;
@@ -120,6 +119,8 @@
       padding: 10px;
       transition: var(--transition);
       border: 1px solid var(--bglight);
+      display: flex;
+      flex-direction: column;
 
 
 
@@ -204,6 +205,8 @@
         padding: 10px 15px;
         background-color: var(--white);
         border-radius: var(--radius-10);
+        height: 100%;
+        flex-direction: column;
         @media only screen and (max-width: 767px) {
           padding: 5px;
         }

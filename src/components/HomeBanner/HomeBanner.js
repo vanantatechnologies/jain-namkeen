@@ -39,7 +39,7 @@ const HomeBanner = () => {
                         >
                             <img
                                 src={ProductBanner}
-                                alt="Marquees Jain namkeen"
+                                alt="Marquees Jain Namkin"
                                 loading="lazy"
                                 className="jain-store img-fluid w-100"
                             />
@@ -56,7 +56,7 @@ const HomeBanner = () => {
                                         : ""
                                 }`}
                             >
-                                Welcome to Jain Namkeen & Jain Chawana mart
+                                Welcome to Jain Namkin & Jain Chawana mart
                             </h1>
 
                             <p
@@ -67,7 +67,7 @@ const HomeBanner = () => {
                                 }`}
                                 style={{ maxWidth: "700px" }}
                             >
-                                At Jain Namkeen, we take pride in offering a wide range of savory treats, meticulously crafted to tantalize your taste buds
+                                At Jain Namkin, we take pride in offering a wide range of savory treats, meticulously crafted to tantalize your taste buds
                             </p>
 
                             <a

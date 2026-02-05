@@ -1,22 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { HelmetProvider } from "react-helmet-async";
+
+import App from "./App";
+import "./index.css";
 import "./styles.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <HelmetProvider>
-            <App />
-            </HelmetProvider>
-        </BrowserRouter>
+        <HelmetProvider>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </HelmetProvider>
     </React.StrictMode>
 );
 

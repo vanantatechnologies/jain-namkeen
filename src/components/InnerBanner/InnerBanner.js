@@ -8,7 +8,7 @@ const InnerBanner = ({ title }) => {
                 <div className="row justify-content-center">
                     <div className="col-md-12 p-0">
                         <div className="home-banner text-center">
-                            <h1 className="font-50 text-white gelica-regular mb-40">
+                            <h1 className="font-50 text-white gelica-regular text-uppercase">
                                 {title}
                             </h1>
                         </div>

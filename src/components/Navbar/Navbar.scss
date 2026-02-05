@@ -10,7 +10,7 @@
     margin: auto;
     z-index: 999;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1320px;
     padding: 0.3rem 15px;
     .navbar-logo {
       a{
@@ -25,6 +25,7 @@
     }
 
     .navbar-links {
+
       @media only screen and (max-width: 991px) {
         position: absolute;
         top: 100%;
@@ -36,49 +37,35 @@
         overflow: hidden;
         transition: max-height 0.3s ease;
         &.active {
-          max-height: 1000px;
+          min-height: 1000vh;
+
         }
       }
       ul.navbar-menu {
         display: flex;
         list-style: none;
         gap: 10px;
+        margin: 0;
+        padding: 0;
         @media only screen and (max-width: 991px) {
           flex-direction: column;
+          gap: 0;
         }
 
         li.navbar-item {
           position: relative;
+          &:nth-child(-n + 4) {
+            .navbar-link.active {
+              color: var(--primary);
+            }
 
+          }
           @media only screen and (max-width: 991px) {
             width: 100%;
             border-top: 1px solid #eee;
           }
-          &:nth-child(5) {
-            background-color: var(--white);
-            border-radius: var(--radius-10);
-            border: 1px solid var(--black);
-            transition: var(--transition);
-            &:hover{
-              background-color: var(--black);
-              border: 1px solid var(--primary);
-              .navbar-link{
-                color: var(--white);
-              }
-            }
-            .navbar-link{
-              color: var(--black);
 
-            }
-          }
-          &:nth-child(6) {
-            background-color: #000;
-            border-radius: var(--radius-10);
-            .navbar-link{
-              color: var(--white);
-            }
-          }
-          a.navbar-link {
+          .navbar-link {
             display: flex;
             align-items: center;
             padding: 0.9rem 1.25rem;
@@ -96,53 +83,48 @@
               margin-left: 5px;
             }
           }
-
-          /* Common dropdown style for Products, Services, Apps */
-          &.navbar-products,
-          &.navbar-services,
-          &.navbar-apps {
-            ul.navbar-submenu {
-              position: absolute;
-              top: 100%;
-              left: 0;
-              background: #f8f8f8;
-              min-width: 220px;
-              max-height: 0;
-              overflow: hidden;
-              opacity: 0;
-              visibility: hidden;
-              transition: all 0.3s ease;
-              flex-direction: column;
-              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-
-              @media only screen and (max-width: 991px) {
-                position: relative;
-                top: 0;
-                left: 0;
-                box-shadow: none;
-                background: #f9f9f9;
-              }
-
-              li.submenu-item {
-                a.submenu-link {
-                  display: block;
-                  padding: 0.8rem 1rem;
-                  color: #333;
-                  font-weight: 400;
-
-                  &:hover {
-                    background: #007bff;
-                    color: #fff;
-                  }
+        }
+        .mobileview-only{
+          @media only screen and (max-width: 767px) {
+            width: calc(100%  - 30px);
+            margin: auto;
+          }
+          .navbar-item{
+            &:nth-child(1) {
+              background-color: var(--white);
+              border-radius: var(--radius-10);
+              border: 1px solid var(--black);
+              transition: var(--transition);
+              &:hover{
+                background-color: var(--black);
+                border: 1px solid var(--black);
+                .navbar-link{
+                  color: var(--white);
                 }
               }
-            }
+              .navbar-link{
+                color: var(--black);
+                @media only screen and (max-width: 767px) {
+                  padding: 1rem 0.25rem;
+                  font-size: 14px;
+                  text-align: center;
+                  display: block;
+                }
 
-            /* Show submenu when open */
-            &.open > ul.navbar-submenu {
-              max-height: 1000px;
-              opacity: 1;
-              visibility: visible;
+              }
+            }
+            &:nth-child(2) {
+              background-color: #000;
+              border-radius: var(--radius-10);
+              .navbar-link{
+                color: var(--white);
+                @media only screen and (max-width: 767px) {
+                  padding: 1rem 0.25rem;
+                  font-size: 14px;
+                  text-align: center;
+                  display: block;
+                }
+              }
             }
           }
         }
@@ -161,8 +143,3 @@
   }
 }
 
-
-/*
-.navbar-link.active{
-  color: var(--primary) !important;
-}*/

@@ -10,7 +10,7 @@ const TopContact = () => {
                     <div className="col-md-12 d-flex justify-content-between">
                         <div className="top-contact-left">
                             <div className="since font-16 text-white gelica-regular">Since 1948</div>
-                            <div className="font-16 text-white gelica-regular d-none d-md-block">Free Delivery on ₹1000 Across India.</div>
+                            <div className="font-16 text-white gelica-regular d-none d-md-block">Free Delivery across the globe.</div>
                         </div>
                         <div className="top-contact-right d-flex justify-content-between align-items-center ">
                                 <li className="list-unstyled ">
@@ -21,7 +21,7 @@ const TopContact = () => {
                                                               loading="lazy"
                                                           />
                                                         </span>
-                                    <a href="tel:+918460300847" className="font-16 text-white gelica-regular text-decoration-none">+91 8460300847</a>
+                                    <a href="tel:+918460300947" className="font-16 text-white gelica-regular text-decoration-none">+91 8460300947</a>
                                 </li>
 
                                 <li className="list-unstyled d-none d-md-flex">
@@ -32,7 +32,7 @@ const TopContact = () => {
                                   loading="lazy"
                               />
                             </span>
-                                    <a href="mailto:info@jainnamkeen.com" className="font-16 text-white gelica-regular text-decoration-none">info@jainnamkeen.com</a>
+                                    <a href="mailto:jainchawanamart1948@gmail.com" className="font-16 text-white gelica-regular text-decoration-none">jainchawanamart1948@gmail.com</a>
                                 </li>
                         </div>
                     </div>

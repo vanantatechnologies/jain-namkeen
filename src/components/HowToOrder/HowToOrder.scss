@@ -8,16 +8,15 @@
   }
   .howto-order-right{
     .quick-order{
-      padding: 20px;
       background-color: var(--bglight);
       border: 1px solid var(--gray-5);
       border-radius: var(--radius-10);
       transition: var(--transition);
       margin-bottom: 20px;
       position: relative;
-      padding-left: 75px;
+      padding: 20px 20px 20px 75px;
       @media only screen and (max-width: 767px) {
-        padding: 20px 15px;
+        padding: 15px 15px 15px 60px;
       }
       &:last-child{
         margin-bottom: 0;
@@ -40,6 +39,10 @@
         cursor: pointer;
         transition: var(--transition);
         color: var(--white);
+        @media only screen and (max-width: 767px) {
+          height: 30px;
+          width: 30px;
+        }
       }
     }
   }

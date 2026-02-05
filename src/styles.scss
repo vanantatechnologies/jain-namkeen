@@ -65,6 +65,12 @@ time, mark, audio, video {
 }
 .mb-40{
   margin-bottom: 40px;
+  @media only screen and (max-width: 1600px) {
+    margin-bottom: 30px;
+  }
+  @media only screen and (max-width: 1200px) {
+    margin-bottom: 25px;
+  }
   @media only screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
@@ -161,6 +167,11 @@ time, mark, audio, video {
 body {
   font-family: 'Gilroy', sans-serif;
   letter-spacing: 0.25px;
+}
+.mt--10{
+  @media only screen and (max-width: 767px) {
+    margin-top: -15px;
+  }
 }
 /*-- base end --*/
 
@@ -284,6 +295,10 @@ body {
     font-size: 18px;
     line-height: 28px;
   }
+  @media only screen and (max-width: 575px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .font-24 {
   font-size: 24px;
@@ -302,11 +317,6 @@ body {
     font-size: 18px;
     line-height: 28px;
   }
-
-  /*@media (max-width: 767px) {
-    font-size: 16px;
-    line-height: 26px;
-  }*/
 }
 
 .font-22{
@@ -324,7 +334,7 @@ body {
 
   @media (max-width: 767px) {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 22px;
   }
 }
 

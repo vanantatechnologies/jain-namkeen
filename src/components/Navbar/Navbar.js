@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
-import jainlogo from "../../assets/img/jain-namkeen.svg";
+import jainlogo from "../../assets/img/Jain-Namkin-Logo.svg";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const closeMenu = () => setMenuOpen(false);
+
+    // Disable body scroll when menu is open
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [menuOpen]);
 
     return (
         <nav className="navbar p-0">
@@ -19,7 +33,7 @@ const Navbar = () => {
                     <NavLink to="/" onClick={closeMenu}>
                         <img
                             src={jainlogo}
-                            alt="Marquees Jain namkeen"
+                            alt="Marquees Jain Namkin"
                             loading="lazy"
                             className="jain-store img-fluid"
                         />
@@ -79,29 +93,31 @@ const Navbar = () => {
                             </NavLink>
                         </li>
 
-                        <li className="navbar-item">
-                            <NavLink
-                                to="/download"
-                                className={({ isActive }) =>
-                                    isActive ? "navbar-link active" : "navbar-link"
-                                }
-                                onClick={closeMenu}
-                            >
-                                Download Brochure
-                            </NavLink>
-                        </li>
+                        <div className="mobileview-only d-flex">
+                            <li className="navbar-item">
+                                <NavLink
+                                    to="/download"
+                                    className={({ isActive }) =>
+                                        isActive ? "navbar-link active" : "navbar-link"
+                                    }
+                                    onClick={closeMenu}
+                                >
+                                    Download Brochure
+                                </NavLink>
+                            </li>
 
-                        <li className="navbar-item">
-                            <NavLink
-                                to="/contact"
-                                className={({ isActive }) =>
-                                    isActive ? "navbar-link active" : "navbar-link"
-                                }
-                                onClick={closeMenu}
-                            >
-                                Contact Us
-                            </NavLink>
-                        </li>
+                            <li className="navbar-item ms-2 ms-md-3">
+                                <NavLink
+                                    to="/contact"
+                                    className={({ isActive }) =>
+                                        isActive ? "navbar-link active" : "navbar-link"
+                                    }
+                                    onClick={closeMenu}
+                                >
+                                    Contact Us
+                                </NavLink>
+                            </li>
+                        </div>
 
                     </ul>
                 </div>

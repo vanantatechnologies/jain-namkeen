@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./AboutUs.scss";
-import { Helmet } from "react-helmet-async";
 import InnerBanner from "../../components/InnerBanner/InnerBanner";
 
 /* ----------------------------------
@@ -13,6 +12,7 @@ import img4 from "../../assets/img/common/4.png";
 import OurJourney from "../../components/OurJourney/OurJourney";
 import HowToOrder from "../../components/HowToOrder/HowToOrder";
 import Faq from "../../components/Faq/Faq";
+import SEO from "../../components/SEO";
 
 const AboutUs = () => {
     /* ----------------------------------
@@ -79,24 +79,27 @@ const AboutUs = () => {
 
     return (
         <React.Fragment>
-            <Helmet>
-                <title>About Us | Jain Namkeen – Tradition, Quality & Taste</title>
-                <meta
-                    name="description"
-                    content="Learn about Jain Namkeen – a trusted name in Indian namkeen, delivering authentic taste, quality ingredients, and traditional recipes."
-                />
-                <meta
-                    name="keywords"
-                    content="About Jain Namkeen, Indian snack brand, namkeen manufacturer"
-                />
-                <link rel="canonical" href="http://www.jainnamkin.com/about-us" />
-                <meta property="og:title" content="About Us | Jain Namkeen" />
-                <meta
-                    property="og:description"
-                    content="Discover the story, values, and tradition behind Jain Namkeen."
-                />
-                <meta property="og:type" content="website" />
-            </Helmet>
+            {/* ================= START SEO ================= */}
+            <SEO
+                title="About Us | Jain Namkin – 75 Years of Authentic Namkin"
+                description="Learn about Jain Namkin’s 75+ years of legacy crafting traditional Indian snacks with authentic recipes and premium quality ingredients."
+                keywords="Jain Namkin, About us, Indian snacks, Namkin, history, legacy"
+                url="https://www.jainnamkin.com/about-us"
+                image="https://www.jainnamkin.com/images/about-og.jpg"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Jain Namkin",
+                    "url": "https://www.jainnamkin.com",
+                    "logo": "https://www.jainnamkin.com/images/logo.png",
+                    "sameAs": [
+                        "https://www.facebook.com/jainNamkin",
+                        "https://www.instagram.com/jainNamkin"
+                    ]
+                }}
+            />
+
+            {/* ================= END SEO ================= */}
 
             <InnerBanner title="About us" />
 
@@ -113,7 +116,7 @@ const AboutUs = () => {
                                 </div>
 
                                 <div className="col-12 col-sm-8">
-                                    <div className={`font-22 gelica-medium-italic font-primary mb-3 ${isVisible ? "animate__animated animate__fadeInUp" : ""}`}>
+                                    <div className={`font-22 gelica-medium-italic font-primary mb-3 mt--10 ${isVisible ? "animate__animated animate__fadeInUp" : ""}`}>
                                         A legacy of taste, trust, and tradition since 1948
                                     </div>
 
@@ -122,7 +125,7 @@ const AboutUs = () => {
                                     </p>
 
                                     <p className={`font-18 font-black-80 mb-3 ${isVisible ? "animate__animated animate__fadeInUp" : ""}`}>
-                                        From a humble vendor’s cart, he began crafting handmade namkeen such as Ratlami Sev and Farsi Puri—prepared with unmatched care, honesty, and tradition. The people of Ahmedabad soon embraced these flavors with immense love and trust.
+                                        From a humble vendor’s cart, he began crafting handmade Namkin such as Ratlami Sev and Farsi Puri—prepared with unmatched care, honesty, and tradition. The people of Ahmedabad soon embraced these flavors with immense love and trust.
                                         <span className="font-22 gelica-medium-italic font-primary mb-3"> we are</span>
                                     </p>
 
@@ -174,7 +177,7 @@ const AboutUs = () => {
                                     <div className="sticky-image">
                                         <img
                                             src={activeImg}
-                                            alt="Jain Namkeen"
+                                            alt="Jain Namkin"
                                             className="img-fluid w-100"
                                         />
                                     </div>
@@ -188,7 +191,7 @@ const AboutUs = () => {
                                                 Encouraged by overwhelming customer affection, Mr. Jain established a small shop near Ahmedabad’s historic Delhi Darwaja—naming it Jain Chawana Mart.
                                             </p>
                                             <p className="font-18 font-black-80 mb-3">
-                                                Decades later, the same shop proudly stands as one of Ahmedabad’s most beloved and iconic namkeen destinations, continuing its journey without compromising authenticity.
+                                                Decades later, the same shop proudly stands as one of Ahmedabad’s most beloved and iconic Namkin destinations, continuing its journey without compromising authenticity.
                                             </p>
                                         </div>
 
@@ -203,16 +206,16 @@ const AboutUs = () => {
 
                                         <div className="story-item" data-image={img3}>
                                             <p className="font-18 font-black-80 mb-3">
-                                                Today, nearly 80 years later, Jain Chawana Mart at Delhi Darwaja and Jain Namkin at Shahibaug continue to delight generations with what many proudly call the finest namkeen Ahmedabad has ever known.
+                                                Today, nearly 80 years later, Jain Chawana Mart at Delhi Darwaja and Jain Namkin at Shahibaug continue to delight generations with what many proudly call the finest Namkin Ahmedabad has ever known.
                                             </p>
                                             <p className="font-18 font-black-80 mb-3">
-                                                While the market may be filled with imitations, true connoisseurs know that authentic Jain Namkeen can only be experienced at its original stores.
+                                                While the market may be filled with imitations, true connoisseurs know that authentic Jain Namkin can only be experienced at its original stores.
                                             </p>
                                         </div>
 
                                         <div className="story-item" data-image={img4}>
                                             <p className="font-18 font-black-80 mb-3">
-                                                Guided by the fresh vision of the fourth generation—Kulinkumar and Shalinkumar—the brand now looks beyond borders. Their mission is simple yet powerful: to carry the unmistakable taste of authentic Jain Namkeen to every corner of the world.
+                                                Guided by the fresh vision of the fourth generation—Kulinkumar and Shalinkumar—the brand now looks beyond borders. Their mission is simple yet powerful: to carry the unmistakable taste of authentic Jain Namkin to every corner of the world.
                                             </p>
                                         </div>
                                     </div>

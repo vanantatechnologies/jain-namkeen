@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Contactus.scss';
-import { Helmet } from "react-helmet-async";
 import InnerBanner from "../../components/InnerBanner/InnerBanner";
 import phoneIcon from "../../assets/img/svg/phone.svg";
 import emailIcon from "../../assets/img/svg/email.svg";
 import globeIcon from "../../assets/img/svg/globe.svg";
 import jainChawana from "../../assets/img/common/jain-chawana.webp";
-import jainNamkeen from "../../assets/img/common/jain-namkeen.webp";
+import jainNamkin from "../../assets/img/common/jain-namkin.webp";
 import InquiryForm from "../../components/InquiryForm/InquiryForm";
+import SEO from "../../components/SEO";
 
 const Contactus = () => {
     const sectionRef = useRef(null);
@@ -30,51 +30,31 @@ const Contactus = () => {
 
     return (
         <React.Fragment>
-            <Helmet>
-                <title>Contact Us | Jain Namkeen – Get in Touch</title>
-
-                <meta
-                    name="description"
-                    content="Contact Jain Namkeen for product inquiries, bulk orders, and business opportunities. We’re happy to assist you."
-                />
-
-                <meta
-                    name="keywords"
-                    content="Contact Jain Namkeen, namkeen supplier, Indian snacks contact"
-                />
-
-                <link rel="canonical" href="http://www.jainnamkin.com/contact-us" />
-
-                {/* Open Graph */}
-                <meta property="og:title" content="Contact Us | Jain Namkeen" />
-                <meta
-                    property="og:description"
-                    content="Get in touch with Jain Namkeen for orders and inquiries."
-                />
-                <meta property="og:url" content="http://www.jainnamkin.com/contact-us" />
-                <meta
-                    property="og:image"
-                    content="http://www.jainnamkin.com/images/contact-og.jpg"
-                />
-                <meta property="og:type" content="website" />
-
-                {/* Local Business Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "LocalBusiness",
-                        "name": "Jain Namkeen",
-                        "url": "http://www.jainnamkin.com/",
-                        "telephone": "+91-XXXXXXXXXX",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressCountry": "IN"
-                        }
-                    })}
-                </script>
-            </Helmet>
+            {/* ================= START SEO ================= */}
+            <SEO
+                title="Contact Us | Jain Namkin – Get in Touch"
+                description="Contact Jain Namkin for product inquiries, bulk orders, and business opportunities. We’re happy to assist you."
+                keywords="Contact Jain Namkin, Namkin supplier, Indian snacks contact"
+                url="https://www.jainnamkin.com/contact-us"
+                image="https://www.jainnamkin.com/images/contact-og.jpg"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "Jain Namkin",
+                    "url": "https://www.jainnamkin.com",
+                    "telephone": "+91-8460300847",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Outside Delhi Darwaja, Dudheshwar Rd",
+                        "addressLocality": "Ahmedabad",
+                        "addressRegion": "Gujarat",
+                        "postalCode": "380004",
+                        "addressCountry": "IN"
+                    }
+                }}
+            />
+            {/* ================= END SEO ================= */}
             <InnerBanner title="Contact us" />
-
             <section
                 ref={sectionRef}
                 className="section-contactus ptb-80"
@@ -130,8 +110,8 @@ const Contactus = () => {
                                                 <span className="icon-box">
                                                     <img src={emailIcon} alt="" loading="lazy" />
                                                 </span>
-                                                <a href="mailto:jainchawana1948@gmail.com">
-                                                    jainchawana1948@gmail.com
+                                                <a href="mailto:jainchawanamart1948@gmail.com">
+                                                    jainchawanamart1948@gmail.com
                                                 </a>
                                             </li>
 
@@ -191,7 +171,7 @@ const Contactus = () => {
                                                     <img src={phoneIcon} alt="" loading="lazy" />
                                                 </span>
                                                 <div className="phone-number">
-                                                    <a href="tel:+919723535365">+91 079 2562 6529</a>
+                                                    <a href="tel:+918460300947">+91 8460300947</a>
                                                 </div>
                                             </li>
 
@@ -226,8 +206,8 @@ const Contactus = () => {
                                         style={{ animationDelay: "0.8s" }}
                                     >
                                         <img
-                                            src={jainNamkeen}
-                                            alt="Jain namkeen"
+                                            src={jainNamkin}
+                                            alt="Jain Namkin"
                                             loading="lazy"
                                             className="jain-store img-fluid w-100"
                                         />

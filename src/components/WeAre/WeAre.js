@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
@@ -26,15 +26,40 @@ const galleryData = [
    WeAre Component
 ========================= */
 const WeAre = () => {
+    const sectionRef = useRef(null);
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+    // IntersectionObserver for scroll animations
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setVisible(true);
+                    observer.disconnect(); // animate once
+                }
+            },
+            { threshold: 0.25 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
-        <section className="our-gallery ptb-80 position-relative">
+        <section className="our-gallery ptb-80 position-relative" ref={sectionRef}>
             <div className="container custom-container">
                 <div className="row mb-40">
                     <div className="col-md-6">
-                        <h2 className="font-50 font-black gelica-regular">
+                        <h2
+                            className={`font-50 font-black gelica-regular ${
+                                visible ? "animate__animated animate__fadeInUp" : ""
+                            }`}
+                        >
                             Our <span className="font-primary">Gallery</span>
                         </h2>
                     </div>
@@ -42,8 +67,7 @@ const WeAre = () => {
 
                 <div className="row">
                     <div className="col-md-12 position-relative">
-
-                        <div className="gallery-slider">
+                        <div className={`gallery-slider ${visible ? "animate__animated animate__fadeInUp" : ""}`}>
                             <Swiper
                                 modules={[Navigation, Autoplay]}
                                 loop={true}
@@ -64,22 +88,12 @@ const WeAre = () => {
                                     nextEl: nextRef.current,
                                 }}
                                 breakpoints={{
-                                    0: {
-                                        slidesPerView: 1,
-                                        centeredSlides: false,
-                                    },
-                                    768: {
-                                        slidesPerView: 1,
-                                        centeredSlides: false,
-                                    },
-                                    992: {
-                                        slidesPerView: 2,
-                                        centeredSlides: true,
-                                    },
+                                    0: { slidesPerView: 1, centeredSlides: false },
+                                    768: { slidesPerView: 1, centeredSlides: false },
+                                    992: { slidesPerView: 2, centeredSlides: true },
                                 }}
                             >
-
-                            {galleryData.map((item, index) => (
+                                {galleryData.map((item, index) => (
                                     <SwiperSlide key={index}>
                                         <div className="gallery-item">
                                             <div className="gallery-top position-relative border">
@@ -110,7 +124,6 @@ const WeAre = () => {
                                     <img src={rightarrow} alt="Next" className="arrow-size" />
                                 </button>
                             </div>
-
                         </div>
                     </div>
                 </div>

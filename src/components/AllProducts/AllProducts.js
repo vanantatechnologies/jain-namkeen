@@ -87,11 +87,15 @@ import star from "../../assets/img/star.svg";
    Product Data
 ========================= */
 const productData = [
+    { id: 54, name: "Navrang Mud Dal", category: "NA", image: navrangMudDal },
+    { id: 53, name: "Mumbai Masala Mix", category: "NA", image: mumbaiMasalaMix },
+    { id: 25, name: "Indori Mix", category: "NA", image: indoriMix },
+    { id: 73, name: "Special Rajwadi Mix", category: "NA", image: specialRajwadiMix },
     { id: 18, name: "Dryfruit Nylon Farali Chewda", category: "NA", image: dryfruitNylonFaraliChewda },
     { id: 19, name: "Dryfruit Nylon Sweet Chewda", category: "NA", image: dryfruitNylonSweetChewda },
     { id: 43, name: "Masala Papdi", category: "NA", image: masalaPapdi },
     { id: 7, name: "Bhavnagari Gathiya", category: "NA", image: bhavnagariGathiya },
-    { id: 73, name: "Special Rajwadi Mix", category: "NA", image: specialRajwadiMix },
+
     { id: 1, name: "Aloo Sev", category: "NA", image: alooSev },
     { id: 2, name: "Alu Masala Wafer", category: "NA", image: aluMasalaWafer },
     { id: 3, name: "Alu Plain Wafer", category: "NA", image: aluPlainWafer },
@@ -115,7 +119,7 @@ const productData = [
     { id: 22, name: "Farali Fudina Sev", category: "NA", image: faraliFudinaSev },
     { id: 23, name: "Farsi Jeera Puri", category: "NA", image: farsiJeeraPuri },
     { id: 24, name: "Gehu Chewda", category: "NA", image: gehuChewda },
-    { id: 25, name: "Indori Mix", category: "NA", image: indoriMix },
+
     { id: 26, name: "Indori Sev", category: "NA", image: indoriSev },
     { id: 27, name: "Jadi Masala Sev", category: "NA", image: jadiMasalaSev },
     { id: 28, name: "Jain Fulvadi", category: "NA", image: jainFulvadi },
@@ -143,8 +147,8 @@ const productData = [
     { id: 50, name: "Mori Sev", category: "NA", image: moriSev },
     { id: 51, name: "Moti Bhakharwadi", category: "NA", image: motiBhakharwadi },
     { id: 52, name: "Moong Chor Garam", category: "NA", image: moongChorGaram },
-    { id: 53, name: "Mumbai Masala Mix", category: "NA", image: mumbaiMasalaMix },
-    { id: 54, name: "Navrang Mud Dal", category: "NA", image: navrangMudDal },
+
+
     { id: 55, name: "Navratna Mix", category: "NA", image: navratnaMix },
     { id: 56, name: "Nylon Gathiya", category: "NA", image: nylonGathiya },
     { id: 57, name: "Palak Sev", category: "NA", image: palakSev },
@@ -194,25 +198,25 @@ const AllProducts = () => {
     return (
         <React.Fragment>
             <Helmet>
-                <title>Our Products | Jain Namkeen – Authentic Indian Snacks</title>
+                <title>Our Products | Jain Namkin – Authentic Indian Snacks</title>
 
                 <meta
                     name="description"
-                    content="Explore Jain Namkeen’s wide range of authentic Indian namkeen and snacks including sev, gathiya, farsan, mixtures, wafers, and traditional favorites."
+                    content="Explore Jain Namkin’s wide range of authentic Indian Namkin and snacks including sev, gathiya, farsan, mixtures, wafers, and traditional favorites."
                 />
 
                 <meta
                     name="keywords"
-                    content="Jain Namkeen products, Indian snacks, namkeen varieties, sev, gathiya, farsan, wafers"
+                    content="Jain Namkin products, Indian snacks, Namkin varieties, sev, gathiya, farsan, wafers"
                 />
 
                 <link rel="canonical" href="http://www.jainnamkin.com/products" />
 
                 {/* Open Graph */}
-                <meta property="og:title" content="Our Products | Jain Namkeen" />
+                <meta property="og:title" content="Our Products | Jain Namkin" />
                 <meta
                     property="og:description"
-                    content="Discover premium quality Indian namkeen and snacks by Jain Namkeen."
+                    content="Discover premium quality Indian Namkin and snacks by Jain Namkin."
                 />
                 <meta property="og:url" content="http://www.jainnamkin.com/products" />
                 <meta
@@ -226,7 +230,7 @@ const AllProducts = () => {
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "ItemList",
-                        "name": "Jain Namkeen Products",
+                        "name": "Jain Namkin Products",
                         "url": "http://www.jainnamkin.com/products",
                     })}
                 </script>
@@ -237,10 +241,10 @@ const AllProducts = () => {
                     {/* FILTER */}
                     <div className="row">
                         <div className="">
-                            <div className="filter-option">
+                            <div className="filter-option mb-40">
 
                                 <div className="filter-option-left">
-                                    <h3 className="font-18 font-black gelica-regular">
+                                    <h3 className="font-18 font-black gelica-regular mb-1 mb-md-0">
                                         All Products
                                     </h3>
                                 </div>
@@ -304,14 +308,14 @@ const AllProducts = () => {
                                             </div>
                                         </div>
 
-                                        <div className="product-bottom text-center">
-                                            <div className="font-20 font-black gilroy-medium py-1">
+                                        <div className="product-bottom text-center d-flex ">
+                                            <div className="font-20 font-black gilroy-medium pb-1 pb-md-2">
                                                 {product.name}
                                             </div>
-                                            <div className="font-18 font-black-80 gilroy-regular mt-2">
+                                            <div className="font-18 font-black-80 gilroy-regular mt-auto">
                                                 <a
-                                                    href="/order-now"
-                                                    className="font-16 order-now-link text-white gilroy-medium text-decoration-none d-block"
+                                                    href="/contact"
+                                                    className="d-none font-16 order-now-link text-white gilroy-medium text-decoration-none d-block"
                                                 >
                                                     Order Now
                                                 </a>

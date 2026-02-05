@@ -6,7 +6,7 @@ const faqData = [
     {
         question: "Authentic Taste & Traditional Recipes",
         answer:
-            "At Jain Namkeen & Sweets, we follow time-tested recipes to deliver authentic taste in every namkeen and sweet, loved by all age groups.",
+            "At Jain Namkin & Sweets, we follow time-tested recipes to deliver authentic taste in every Namkin and sweet, loved by all age groups.",
     },
     {
         question: "Premium Quality Ingredients",
@@ -19,7 +19,7 @@ const faqData = [
             "Our products are prepared under hygienic conditions and packed with care to maintain freshness, taste, and quality from our kitchen to your home.",
     },
     {
-        question: "Wide Variety of Namkeen & Sweets",
+        question: "Wide Variety of Namkin & Sweets",
         answer:
             "From spicy mixtures and crispy snacks to delicious traditional sweets, we offer a wide range of options for daily cravings and festive celebrations.",
     },
@@ -31,7 +31,7 @@ const faqData = [
     {
         question: "Trusted by Customers for Consistency",
         answer:
-            "Our customers choose us for consistent taste, reliable quality, and the satisfaction of enjoying fresh namkeen and sweets every time.",
+            "Our customers choose us for consistent taste, reliable quality, and the satisfaction of enjoying fresh Namkin and sweets every time.",
     },
 ];
 
@@ -87,7 +87,7 @@ const Whyus = () => {
                                 >
                                     <img
                                         src={jainstore}
-                                        alt="Marquees Jain namkeen"
+                                        alt="Marquees Jain Namkin"
                                         loading="lazy"
                                         className="jain-store img-fluid w-100"
                                     />

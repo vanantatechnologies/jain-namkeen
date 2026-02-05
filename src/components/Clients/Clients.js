@@ -16,7 +16,7 @@ const clientData = [
         imageAlt: "Client Logo",
         name: "Rohit Mehta",
         description:
-            "Jain Namkeen & Sweets has the perfect balance of taste and freshness. Their namkeen is always crispy and full of flavor, and the sweets are absolutely delicious.",
+            "Jain Namkin & Sweets has the perfect balance of taste and freshness. Their Namkin is always crispy and full of flavor, and the sweets are absolutely delicious.",
         location: "Ahmedabad",
     },
     {
@@ -32,7 +32,7 @@ const clientData = [
         imageAlt: "Client Logo",
         name: "Amit Patel",
         description:
-            "Best place for authentic namkeen and sweets. Their products are perfect for festivals and family functions. Everyone in my home loves the taste.",
+            "Best place for authentic Namkin and sweets. Their products are perfect for festivals and family functions. Everyone in my home loves the taste.",
         location: "Vadodara",
     },
     {
@@ -40,7 +40,7 @@ const clientData = [
         imageAlt: "Client Logo",
         name: "Priya Desai",
         description:
-            "Amazing variety and premium quality. The sweets are rich in taste and the namkeen stays fresh for a long time. Highly recommended!",
+            "Amazing variety and premium quality. The sweets are rich in taste and the Namkin stays fresh for a long time. Highly recommended!",
         location: "Rajkot",
     },
 ];

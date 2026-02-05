@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Footer.scss";
-import footerLogo from "../../assets/img/jain-namkeen.svg";
+import footerLogo from "../../assets/img/Jain-Namkin-Logo.svg";
 import phoneIcon from "../../assets/img/svg/phone.svg";
 import emailIcon from "../../assets/img/svg/email.svg";
 import globeIcon from "../../assets/img/svg/globe.svg";
@@ -43,7 +43,7 @@ const Footer = () => {
                                     className={`footer-left ${
                                         visible ? "animate__animated animate__fadeInUp" : ""
                                     }`}
-                                    style={{ animationDelay: "0s" }}
+                                    style={{animationDelay: "0s"}}
                                 >
                                     <a
                                         className="mb-2 mb-md-3 text-sm-center text-lg-start"
@@ -59,7 +59,10 @@ const Footer = () => {
                                     </a>
 
                                     <p className="font-18 text-white gilroy-regular mb-2">
-                                        We are a namkeen / farsan brand based in Ahmedabad offering the utmost best quality namkeen snacks made from top-notch quality of ingredients since 1948. Our products are made in high quality groundnut oil and use the highest quality Besan flour and all.
+                                        Jain Namkin, based in Ahmedabad, has been crafting authentic snacks since 1948
+                                        using premium Besan, top-quality groundnut oil, and carefully selected spices.
+                                        From Ratlami Sev and Farsi Puri to Rajwadi Mixture and Special Nylon Papdi, we
+                                        deliver unmatched taste and tradition, delighting generations of snack lovers..
                                     </p>
                                 </div>
 
@@ -67,13 +70,13 @@ const Footer = () => {
                                     className={`footer-right ${
                                         visible ? "animate__animated animate__fadeInUp" : ""
                                     }`}
-                                    style={{ animationDelay: "0.2s" }}
+                                    style={{animationDelay: "0.2s"}}
                                 >
                                     <div
                                         className={`inner-box ${
                                             visible ? "animate__animated animate__fadeInUp" : ""
                                         }`}
-                                        style={{ animationDelay: "0.4s" }}
+                                        style={{animationDelay: "0.4s"}}
                                     >
                                         <div className="footer-menus">
                                             <h4 className="font-24 text-white gelica-regular">Links</h4>
@@ -93,7 +96,7 @@ const Footer = () => {
                                         className={`inner-box ${
                                             visible ? "animate__animated animate__fadeInUp" : ""
                                         }`}
-                                        style={{ animationDelay: "0.6s" }}
+                                        style={{animationDelay: "0.6s"}}
                                     >
                                         <div className="footer-menus">
                                             <h4 className="font-24 text-white gelica-regular">Contact us</h4>
@@ -101,26 +104,26 @@ const Footer = () => {
                                                 <ul>
                                                     <li>
                                                         <span className="icon-box">
-                                                            <img src={phoneIcon} alt="" />
+                                                            <img src={phoneIcon} alt=""/>
                                                         </span>
                                                         <a href="tel:+918460300847">+91 8460300847</a>
                                                     </li>
                                                     <li>
                                                         <span className="icon-box">
-                                                            <img src={emailIcon} alt="" />
+                                                            <img src={emailIcon} alt=""/>
                                                         </span>
-                                                        <a href="mailto:info@jainnamkeen.com">info@jainnamkeen.com</a>
+                                                        <a href="mailto:jainchawanamart1948@gmail.com.">jainchawanamart1948@gmail.com</a>
                                                     </li>
                                                     <li>
                                                         <span className="icon-box">
-                                                            <img src={globeIcon} alt="" />
+                                                            <img src={globeIcon} alt=""/>
                                                         </span>
                                                         <a
-                                                            href="https://www.jainnamkeen.com"
+                                                            href="https://www.jainnamkin.com"
                                                             target="_blank"
                                                             rel="noopener noreferrer"
                                                         >
-                                                            www.jainnamkeen.com
+                                                            www.jainnamkin.com
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -135,7 +138,7 @@ const Footer = () => {
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                             >
-                                                                <img src={fbIcon} alt="" />
+                                                                <img src={fbIcon} alt=""/>
                                                             </a>
                                                         </span>
                                                     </li>
@@ -146,7 +149,7 @@ const Footer = () => {
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                             >
-                                                                <img src={instaIcon} alt="" />
+                                                                <img src={instaIcon} alt=""/>
                                                             </a>
                                                         </span>
                                                     </li>
@@ -159,7 +162,7 @@ const Footer = () => {
                                         className={`inner-box ${
                                             visible ? "animate__animated animate__fadeInUp" : ""
                                         }`}
-                                        style={{ animationDelay: "0.8s" }}
+                                        style={{animationDelay: "0.8s"}}
                                     >
                                         <div className="footer-menus">
                                             <h4 className="font-24 text-white gelica-regular">Our location</h4>
@@ -167,19 +170,21 @@ const Footer = () => {
                                                 <ul>
                                                     <li>
                                                         <span className="icon-box">
-                                                            <img src={buildingIcon} alt="" />
+                                                            <img src={buildingIcon} alt=""/>
                                                         </span>
                                                         <div className="font-16 text-white">
-                                                            In Lalakaka Sabji Market, Outside Delhi Darwaja, Dudheshwar Rd,
+                                                            In Lalakaka Sabji Market, Outside Delhi Darwaja, Dudheshwar
+                                                            Rd,
                                                             Ahmedabad – 380004
                                                         </div>
                                                     </li>
                                                     <li className="mt-3">
                                                         <span className="icon-box">
-                                                            <img src={buildingIcon} alt="" />
+                                                            <img src={buildingIcon} alt=""/>
                                                         </span>
                                                         <div className="font-16 text-white">
-                                                            G-44, Ashta Mangal Complex, Near HDFC Bank, Shahibaug Rd, Ahmedabad – 380004
+                                                            G-44, Ashta Mangal Complex, Near HDFC Bank, Shahibaug Rd,
+                                                            Ahmedabad – 380004
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -188,6 +193,19 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className={`marquee-container ${
+                                visible ? "animate__animated animate__fadeInUp" : ""
+                            }`}
+                                 style={{animationDelay: "1s"}}
+                            >
+                                <div className="marquee font-20 text-white gelica-regular">
+                                    <span>Our products are crafted using premium groundnut and cottonseed oils to ensure superior taste and quality.</span>
+                                    <span>Our products are crafted using premium groundnut and cottonseed oils to ensure superior taste and quality.</span>
+                                    <span>Our products are crafted using premium groundnut and cottonseed oils to ensure superior taste and quality.</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -196,10 +214,10 @@ const Footer = () => {
                     className={`copy-right ${
                         visible ? "animate__animated animate__fadeInUp" : ""
                     }`}
-                    style={{ animationDelay: "1s" }}
+                    style={{animationDelay: "1s"}}
                 >
                     <div className="left">
-                        Copyright © 2026 JAIN NAMKEEN. All Rights Reserved
+                        Copyright © 2026 JAIN Namkin. All Rights Reserved
                     </div>
                     <div className="right">
                         Designed and Developed by <a href="/about">Sunny Soni.</a>

@@ -19,7 +19,7 @@ const faqData = [
     {
         question: "How can I place an order?",
         answer:
-            'You can place an order by sending a message on our WhatsApp number <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener noreferrer">+91 9XXXXXXXXX</a> with the list of items, required quantities, and complete delivery address. Orders are usually delivered within 3–5 working days.'
+            'You can place an order by sending a message on our WhatsApp number <a href="https://wa.me/918460300947" target="_blank" rel="noopener noreferrer">+91 8460300947</a> with the list of items, required quantities, and complete delivery address. Orders are usually delivered within 3–5 working days.'
     },
     {
         question: "What is the shelf life of your products?",
@@ -29,7 +29,7 @@ const faqData = [
     {
         question: "Do you accept bulk or wholesale orders?",
         answer:
-            'Yes, we accept bulk and wholesale orders. For bulk inquiries, please contact us via WhatsApp at <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener noreferrer">+91 9XXXXXXXXX</a> or email us at <a href="mailto:contact@yourbrandname.com">contact@yourbrandname.com</a>.'
+            'Yes, we accept bulk and wholesale orders. For bulk inquiries, please contact us via WhatsApp at <a href="https://wa.me/918460300947" target="_blank" rel="noopener noreferrer">+91 8460300947</a> or email us at <a href="mailto:jainchawanamart1948@gmail.com">jainchawanamart1948@gmail.com</a>.'
     }
 ];
 
