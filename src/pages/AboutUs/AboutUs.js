@@ -5,7 +5,7 @@ import InnerBanner from "../../components/InnerBanner/InnerBanner";
 /* ----------------------------------
    IMAGE ASSETS
 ---------------------------------- */
-import img1 from "../../assets/img/ganeshlal.webp";
+import img1 from "../../assets/img/ganeshji.webp";
 import img2 from "../../assets/img/ganesh-kamla.webp";
 import img3 from "../../assets/img/staff.webp";
 import img4 from "../../assets/img/jain-chawana.webp";

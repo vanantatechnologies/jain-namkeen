@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 
 import "./WeAre.scss";
 
-import Ganeshlal from "../../assets/img/ganeshlal.webp";
+import Ganeshlal from "../../assets/img/ganeshji.webp";
 import GaneshlalKamla from "../../assets/img/ganesh-kamla.webp";
 import staff from "../../assets/img/staff.webp";
 import boxing from "../../assets/img/boxing.webp";
