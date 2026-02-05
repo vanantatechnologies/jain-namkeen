@@ -6,14 +6,19 @@ import Contactus from "./pages/Contactus/Contactus";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Gallery from "./pages/Gallery/Gallery";
 import "animate.css";
-import WhatsAppButton from "./components/WhatsAppButton";
-import Footer from "./components/Footer/Footer";
+
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
         <>
+            <ScrollToTop />
+
             <Header />
+
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutUs />} />

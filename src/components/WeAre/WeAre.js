@@ -7,7 +7,10 @@ import "swiper/css/navigation";
 
 import "./WeAre.scss";
 
-import abbs from "../../assets/img/common/jain-chawana-mart.webp";
+import Ganeshlal from "../../assets/img/ganeshlal.webp";
+import GaneshlalKamla from "../../assets/img/ganesh-kamla.webp";
+import staff from "../../assets/img/staff.webp";
+import boxing from "../../assets/img/boxing.webp";
 import rightarrow from "../../assets/img/right-arrow.svg";
 import leftarrow from "../../assets/img/left-arrow.svg";
 
@@ -15,11 +18,26 @@ import leftarrow from "../../assets/img/left-arrow.svg";
    Gallery Data
 ========================= */
 const galleryData = [
-    { image: abbs, imageAlt: "Gallery Image", name: "Ratlami Sev" },
-    { image: abbs, imageAlt: "Gallery Image", name: "Ratlami Sev" },
-    { image: abbs, imageAlt: "Gallery Image", name: "Ratlami Sev" },
-    { image: abbs, imageAlt: "Gallery Image", name: "Ratlami Sev" },
-    { image: abbs, imageAlt: "Gallery Image", name: "Ratlami Sev" },
+    {
+        image: Ganeshlal,
+        imageAlt: "Founder Ganeshlal preparing traditional Ratlami Sev",
+        name: "Ratlami Sev",
+    },
+    {
+        image: GaneshlalKamla,
+        imageAlt: "Ganeshlal and Kamla working together on Ratlami Sev production",
+        name: "Ratlami Sev",
+    },
+    {
+        image: staff,
+        imageAlt: "Staff members involved in Ratlami Sev preparation process",
+        name: "Ratlami Sev",
+    },
+    {
+        image: boxing,
+        imageAlt: "Packaging and boxing of Ratlami Sev for distribution",
+        name: "Ratlami Sev",
+    },
 ];
 
 /* =========================
@@ -105,7 +123,7 @@ const WeAre = () => {
                                                     />
                                                 </div>
 
-                                                <div className="gallery-bottom text-center">
+                                                <div className="gallery-bottom text-center d-none">
                                                     <div className="font-20 font-black gilroy-medium py-1">
                                                         {item.name}
                                                     </div>

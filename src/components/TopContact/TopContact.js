@@ -10,7 +10,7 @@ const TopContact = () => {
                     <div className="col-md-12 d-flex justify-content-between">
                         <div className="top-contact-left">
                             <div className="since font-16 text-white gelica-regular">Since 1948</div>
-                            <div className="font-16 text-white gelica-regular d-none d-md-block">Free Delivery across the globe.</div>
+                            <div className="font-16 text-white gelica-regular d-none d-lg-block">Free Delivery across the globe.</div>
                         </div>
                         <div className="top-contact-right d-flex justify-content-between align-items-center ">
                                 <li className="list-unstyled ">
@@ -24,7 +24,7 @@ const TopContact = () => {
                                     <a href="tel:+918460300947" className="font-16 text-white gelica-regular text-decoration-none">+91 8460300947</a>
                                 </li>
 
-                                <li className="list-unstyled d-none d-md-flex">
+                                <li className="list-unstyled d-none d-lg-flex">
                             <span className="icon-box">
                               <img
                                   src={emailIcon}

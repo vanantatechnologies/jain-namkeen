@@ -53,6 +53,9 @@
 .sticky-image {
   position: sticky;
   top: 100px;
+  img{
+    border-radius: var(--radius-10);
+  }
 }
 
 .story-image {
@@ -93,7 +96,9 @@
 
   .story-item {
     min-height: auto;
-    padding: 30px 0;
+    padding: 5px;
+    border-bottom: 1px solid var(--primary-light);
+    margin-bottom: 15px;
   }
 }
 

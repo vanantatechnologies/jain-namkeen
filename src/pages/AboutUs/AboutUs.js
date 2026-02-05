@@ -5,10 +5,10 @@ import InnerBanner from "../../components/InnerBanner/InnerBanner";
 /* ----------------------------------
    IMAGE ASSETS
 ---------------------------------- */
-import img1 from "../../assets/img/common/1.png";
-import img2 from "../../assets/img/common/2.png";
-import img3 from "../../assets/img/common/3.png";
-import img4 from "../../assets/img/common/4.png";
+import img1 from "../../assets/img/ganeshlal.webp";
+import img2 from "../../assets/img/ganesh-kamla.webp";
+import img3 from "../../assets/img/staff.webp";
+import img4 from "../../assets/img/jain-chawana.webp";
 import OurJourney from "../../components/OurJourney/OurJourney";
 import HowToOrder from "../../components/HowToOrder/HowToOrder";
 import Faq from "../../components/Faq/Faq";

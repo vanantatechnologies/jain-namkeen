@@ -1,10 +1,16 @@
 .section-home-banner{
   line-height: 0;
-  //background-color: #2A3086;
   height: 75vh;
   align-content: center;
   background: url("../../assets/img/Banner-new-light.webp") no-repeat;
   background-size: cover;
+  overflow: hidden;
+  @media only screen and (max-width: 1600px) {
+    height: 70vh;
+  }
+  @media only screen and (max-width: 1199px) {
+    height: 60vh;
+  }
   @media only screen and (max-width: 767px) {
     height: auto;
   }
@@ -12,13 +18,17 @@
     img{
       @media only screen and (max-width: 767px) {
         max-width: 250px;
-        margin: 25px 0 0;
+        position: absolute;
+        margin: 0;
+        opacity: 0.25;
+        top: 50%;
+        transform: translate(0, -50%);
       }
     }
   }
   .home-banner{
     @media only screen and (max-width: 767px) {
-      margin-bottom: 50px;
+      margin: 50px 0;
     }
   }
 }

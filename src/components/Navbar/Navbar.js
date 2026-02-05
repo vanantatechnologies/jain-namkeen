@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
-import { FaBars, FaTimes } from "react-icons/fa";
+
+// Assets
 import jainlogo from "../../assets/img/Jain-Namkin-Logo.svg";
+import menuOpenIcon from "../../assets/img/common/menu-open.svg";
+import menuCloseIcon from "../../assets/img/common/menu-close.svg";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => setMenuOpen(!menuOpen);
+    const toggleMenu = () => setMenuOpen((prev) => !prev);
     const closeMenu = () => setMenuOpen(false);
 
     // Disable body scroll when menu is open
     useEffect(() => {
-        if (menuOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
+        document.body.style.overflow = menuOpen ? "hidden" : "";
 
-        // Cleanup on unmount
         return () => {
             document.body.style.overflow = "";
         };
@@ -33,25 +31,25 @@ const Navbar = () => {
                     <NavLink to="/" onClick={closeMenu}>
                         <img
                             src={jainlogo}
-                            alt="Marquees Jain Namkin"
+                            alt="Jain Namkin"
                             loading="lazy"
                             className="jain-store img-fluid"
                         />
                     </NavLink>
                 </div>
 
-                {/* Menu */}
+                {/* Navigation Menu */}
                 <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
                     <ul className="navbar-menu">
 
                         <li className="navbar-item">
                             <NavLink
                                 to="/"
+                                end
                                 className={({ isActive }) =>
                                     isActive ? "navbar-link active" : "navbar-link"
                                 }
                                 onClick={closeMenu}
-                                end
                             >
                                 Home
                             </NavLink>
@@ -93,6 +91,7 @@ const Navbar = () => {
                             </NavLink>
                         </li>
 
+                        {/* Mobile-only links */}
                         <div className="mobileview-only d-flex">
                             <li className="navbar-item">
                                 <NavLink
@@ -122,9 +121,18 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                {/* Mobile Toggle */}
-                <div className="navbar-toggle" onClick={toggleMenu}>
-                    {menuOpen ? <FaTimes /> : <FaBars />}
+                {/* Mobile Toggle Button */}
+                <div
+                    className="navbar-toggle"
+                    onClick={toggleMenu}
+                    role="button"
+                    aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+                >
+                    <img
+                        src={menuOpen ? menuCloseIcon : menuOpenIcon}
+                        alt=""
+                        className="menu-toggle-icon"
+                    />
                 </div>
 
             </div>

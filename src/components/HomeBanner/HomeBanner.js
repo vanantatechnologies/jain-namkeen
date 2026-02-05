@@ -25,7 +25,7 @@ const HomeBanner = () => {
     }, []);
 
     return (
-        <section className="section-home-banner" ref={bannerRef}>
+        <section className="section-home-banner position-relative" ref={bannerRef}>
             <div className="container custom-container">
                 <div className="row">
                     {/* IMAGE */}

@@ -58,7 +58,7 @@ const Footer = () => {
                                         />
                                     </a>
 
-                                    <p className="font-18 text-white gilroy-regular mb-2">
+                                    <p className="font-18 text-white gilroy-regular mt-2 mb-0">
                                         Jain Namkin, based in Ahmedabad, has been crafting authentic snacks since 1948
                                         using premium Besan, top-quality groundnut oil, and carefully selected spices.
                                         From Ratlami Sev and Farsi Puri to Rajwadi Mixture and Special Nylon Papdi, we

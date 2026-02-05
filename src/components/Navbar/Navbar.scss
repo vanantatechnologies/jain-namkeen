@@ -143,3 +143,16 @@
   }
 }
 
+
+
+.navbar-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle-icon {
+  width: 28px;
+  height: 28px;
+}
