@@ -42,7 +42,7 @@ const HomeBanner = () => {
                                 alt="Marquees Jain Namkin"
                                 loading="lazy"
                                 className="jain-store img-fluid w-100"
-                                width={1250} height={805} loading="lazy" />
+                                width={1250} height={805} />
                             />
                         </div>
                     </div>
