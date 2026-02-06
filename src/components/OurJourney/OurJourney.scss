@@ -3,6 +3,9 @@
     padding: 30px 15px;
     border: 1px solid #01A64AFF;
     border-radius: var(--radius-10);
+    @media only screen and (max-width: 767px) {
+      padding: 15px 15px;
+    }
     &:hover{
       background-color: var(--primary);
       .journey-item{
@@ -76,3 +79,28 @@
     }
   }
 }
+
+/* Make Swiper wrapper stretch */
+.our-journey-section .swiper-wrapper {
+  align-items: stretch;
+}
+
+/* Ensure each slide takes full height */
+.our-journey-section .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+/* Make journey card stretch fully */
+.our-journey-section .journey-slider,
+.our-journey-section .journey-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: keep content aligned nicely */
+.our-journey-section .journey-item {
+  justify-content: flex-start; /* or center */
+}
+

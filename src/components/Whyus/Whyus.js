@@ -87,9 +87,10 @@ const Whyus = () => {
                                 >
                                     <img
                                         src={jainstore}
-                                        alt="Marquees Jain Namkin"
+                                        alt="Jain Namkin Store"
                                         loading="lazy"
                                         className="jain-store img-fluid w-100"
+                                        width={900} height={675}
                                     />
                                 </div>
                             </div>

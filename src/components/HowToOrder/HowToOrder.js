@@ -24,7 +24,7 @@ const HowToOrder = () => {
     }, []);
 
     return (
-        <section className="section-howto-order ptb-80" ref={sectionRef}>
+        <section className="section-howto-order ptb-80" id="howto-order" ref={sectionRef}>
             <div className="container custom-container">
                 <div className="row justify-content-center">
                     <div className="col-md-12 col-xl-10">

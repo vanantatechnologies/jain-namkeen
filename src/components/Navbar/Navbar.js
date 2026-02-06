@@ -91,6 +91,18 @@ const Navbar = () => {
                             </NavLink>
                         </li>
 
+                        <li className="navbar-item">
+                            <NavLink
+                                to="/about#howto-order"
+                                className={({ isActive }) =>
+                                    isActive ? "navbar-link active" : "navbar-link"
+                                }
+                                onClick={closeMenu}
+                            >
+                                Order
+                            </NavLink>
+                        </li>
+
                         {/* Mobile-only links */}
                         <div className="mobileview-only d-flex">
                             <li className="navbar-item">

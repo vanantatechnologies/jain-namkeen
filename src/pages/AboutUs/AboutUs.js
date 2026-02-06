@@ -7,7 +7,7 @@ import InnerBanner from "../../components/InnerBanner/InnerBanner";
 ---------------------------------- */
 import img1 from "../../assets/img/ganeshji.webp";
 import img2 from "../../assets/img/ganesh-kamla.webp";
-import img3 from "../../assets/img/staff.webp";
+import img3 from "../../assets/img/kamlaben-new.webp";
 import img4 from "../../assets/img/jain-chawana.webp";
 import OurJourney from "../../components/OurJourney/OurJourney";
 import HowToOrder from "../../components/HowToOrder/HowToOrder";
@@ -154,7 +154,7 @@ const AboutUs = () => {
                                     </ul>
 
 
-                                    <a href="/contact" className={`common-primary-btn mt-4 ${isVisible ? "animate__animated animate__fadeInUp animate__delay-2s" : ""}`}>
+                                    <a href="/contact" className={`common-primary-btn mt-sm-2 mt-md-4 ${isVisible ? "animate__animated animate__fadeInUp animate__delay-2s" : ""}`}>
                                         Contact now
                                     </a>
                                 </div>
@@ -179,6 +179,7 @@ const AboutUs = () => {
                                             src={activeImg}
                                             alt="Jain Namkin"
                                             className="img-fluid w-100"
+                                            height={705} width={413} loading="lazy"
                                         />
                                     </div>
                                 </div>

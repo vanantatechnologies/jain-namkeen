@@ -23,8 +23,8 @@ import dryfruitNylonSweetChewda from "../../assets/img/products/drayfruit-naylon
    Product Data
 ========================= */
 const productData = [
-    { image: navrangMudDal, imageAlt: "Navrang Mud Dal", name: "Navrang Mud Dal", orderLink: "/contact" },
-    { image: mumbaiMasalaMix, imageAlt: "Mumbai Masala Mix", name: "Mumbai Masala Mix", orderLink: "/contact" },
+    { image: navrangMudDal, imageAlt: "Navrang Dal Moth", name: "Navrang Dal Moth", orderLink: "/contact" },
+    { image: mumbaiMasalaMix, imageAlt: "Mumbai Missal Mix", name: "Mumbai Missal Mix", orderLink: "/contact" },
     { image: indoriMix, imageAlt: "Indori Mix", name: "Indori Mix", orderLink: "/contact" },
     { image: specialRajwadiMix, imageAlt: "Special Rajwadi Mix", name: "Special Rajwadi Mix", orderLink: "/contact" },
     { image: dryfruitNylonFaraliChewda, imageAlt: "Dryfruit Nylon Farali Chewda", name: "Dryfruit Nylon Farali Chewda", orderLink: "/contact" },
@@ -99,12 +99,12 @@ const TopSelling = () => {
                                                         Top Selling
                                                     </span>
                                                     <span className="bedge-right">
-                                                        <img src={star} alt="rating" />
+                                                        <img src={star} alt="rating"/>
                                                     </span>
                                                 </div>
 
                                                 <div className="product-box mx-auto">
-                                                    <img src={product.image} alt={product.imageAlt} className="mx-auto img-fluid" />
+                                                    <img src={product.image} alt={product.imageAlt} className="mx-auto img-fluid" width={1000} height={800} loading="lazy" />
                                                 </div>
                                             </div>
 
@@ -112,7 +112,7 @@ const TopSelling = () => {
                                                 <div className="font-20 font-black gilroy-medium py-1">
                                                     {product.name}
                                                 </div>
-                                                <a href={product.orderLink} className="font-16 order-now-link text-white gilroy-medium text-decoration-none d-block mt-2">
+                                                <a href={product.orderLink} className="font-16 order-now-link text-white gilroy-medium text-decoration-none d-none mt-2">
                                                     Order Now
                                                 </a>
                                             </div>

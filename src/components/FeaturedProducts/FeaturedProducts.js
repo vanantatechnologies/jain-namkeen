@@ -115,6 +115,7 @@ const FeaturedProducts = () => {
                                                         src={product.image}
                                                         alt={product.imageAlt}
                                                         className="mx-auto img-fluid"
+                                                        width={1000} height={800} loading="lazy"
                                                     />
                                                 </div>
                                             </div>
@@ -125,7 +126,7 @@ const FeaturedProducts = () => {
                                                 </div>
                                                 <a
                                                     href={product.orderLink}
-                                                    className="font-16 order-now-link text-white gilroy-medium text-decoration-none d-block mt-2"
+                                                    className="font-16 order-now-link text-white gilroy-medium text-decoration-none d-none mt-2"
                                                 >
                                                     Order Now
                                                 </a>

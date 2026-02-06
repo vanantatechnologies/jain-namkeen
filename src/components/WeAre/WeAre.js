@@ -6,11 +6,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import "./WeAre.scss";
+import CrispyNylonPapdi from "../../assets/img/gallery/crispy-nylon-papdi.webp";
+import DryfruitFaraliChevda from "../../assets/img/gallery/dryfruit-faravi-chevda.webp";
+import KhattaMeethaMix from "../../assets/img/gallery/khatta-meetha-mix.webp";
+import MasalaCornFlakes from "../../assets/img/gallery/masala-corn-flakes.webp";
+import MasalaKachori from "../../assets/img/gallery/masala-kachori.webp";
+import MasalaPuri from "../../assets/img/gallery/masala-puri.webp";
+import RoastedWheatPuffs from "../../assets/img/gallery/roasted-wheat-puffs.webp";
+import SoyaBingo from "../../assets/img/gallery/soya-bingo.webp";
+import SpecialFulwadi from "../../assets/img/gallery/special-fulwadi.webp";
+import TomatoFaraliPara from "../../assets/img/gallery/tomato-farali-para.webp";
 
-import Ganeshlal from "../../assets/img/ganeshji.webp";
-import GaneshlalKamla from "../../assets/img/ganesh-kamla.webp";
-import staff from "../../assets/img/staff.webp";
-import boxing from "../../assets/img/boxing.webp";
 import rightarrow from "../../assets/img/right-arrow.svg";
 import leftarrow from "../../assets/img/left-arrow.svg";
 
@@ -19,24 +25,54 @@ import leftarrow from "../../assets/img/left-arrow.svg";
 ========================= */
 const galleryData = [
     {
-        image: Ganeshlal,
-        imageAlt: "Founder Ganeshlal preparing traditional Ratlami Sev",
-        name: "Ratlami Sev",
+        image: CrispyNylonPapdi,
+        imageAlt: "Crispy Nylon Papdi namkeen",
+        name: "Crispy Nylon Papdi",
     },
     {
-        image: GaneshlalKamla,
-        imageAlt: "Ganeshlal and Kamla working together on Ratlami Sev production",
-        name: "Ratlami Sev",
+        image: DryfruitFaraliChevda,
+        imageAlt: "Dryfruit Farali Chevda namkeen",
+        name: "Dryfruit Farali Chevda",
     },
     {
-        image: staff,
-        imageAlt: "Staff members involved in Ratlami Sev preparation process",
-        name: "Ratlami Sev",
+        image: KhattaMeethaMix,
+        imageAlt: "Khatta Meetha Mix namkeen",
+        name: "Khatta Meetha Mix",
     },
     {
-        image: boxing,
-        imageAlt: "Packaging and boxing of Ratlami Sev for distribution",
-        name: "Ratlami Sev",
+        image: MasalaCornFlakes,
+        imageAlt: "Masala Corn Flakes namkeen",
+        name: "Masala Corn Flakes",
+    },
+    {
+        image: MasalaKachori,
+        imageAlt: "Masala Kachori snack",
+        name: "Masala Kachori",
+    },
+    {
+        image: MasalaPuri,
+        imageAlt: "Masala Puri snack",
+        name: "Masala Puri",
+    },
+    {
+        image: RoastedWheatPuffs,
+        imageAlt: "Roasted Wheat Puffs namkeen",
+        name: "Roasted Wheat Puffs",
+    },
+    {
+        image: SoyaBingo,
+        imageAlt: "Soya Bingo snack",
+        name: "Soya Bingo",
+    },
+    {
+        image: SpecialFulwadi,
+        imageAlt: "Special Fulwadi namkeen",
+        name: "Special Fulwadi",
+    },
+    {
+        image: TomatoFaraliPara,
+        imageAlt: "Tomato Farali Para snack",
+        name: "Tomato Farali Para",
     },
 ];
 
@@ -90,7 +126,7 @@ const WeAre = () => {
                                 modules={[Navigation, Autoplay]}
                                 loop={true}
                                 centeredSlides={true}
-                                slidesPerView={1.5}
+                                slidesPerView={2.5}
                                 spaceBetween={30}
                                 speed={600}
                                 autoplay={{
@@ -119,7 +155,8 @@ const WeAre = () => {
                                                     <img
                                                         src={item.image}
                                                         alt={item.imageAlt}
-                                                        className="mx-auto img-fluid"
+                                                        className="mx-auto img-fluid w-100"
+                                                        width={592} height={400} loading="lazy"
                                                     />
                                                 </div>
 

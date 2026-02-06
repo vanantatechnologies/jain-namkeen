@@ -87,8 +87,8 @@ import star from "../../assets/img/star.svg";
    Product Data
 ========================= */
 const productData = [
-    { id: 54, name: "Navrang Mud Dal", category: "NA", image: navrangMudDal },
-    { id: 53, name: "Mumbai Masala Mix", category: "NA", image: mumbaiMasalaMix },
+    { id: 54, name: "Navrang Dal Moth", category: "NA", image: navrangMudDal },
+    { id: 53, name: "Mumbai Missal Mix", category: "NA", image: mumbaiMasalaMix },
     { id: 25, name: "Indori Mix", category: "NA", image: indoriMix },
     { id: 73, name: "Special Rajwadi Mix", category: "NA", image: specialRajwadiMix },
     { id: 18, name: "Dryfruit Nylon Farali Chewda", category: "NA", image: dryfruitNylonFaraliChewda },
@@ -304,12 +304,12 @@ const AllProducts = () => {
                                             </span>
                                             </div>
                                             <div className="product-box mx-auto">
-                                                <img src={product.image} alt={product.name} />
+                                                <img src={product.image} alt={product.name} width={1000} height={800} loading="lazy" />
                                             </div>
                                         </div>
 
                                         <div className="product-bottom text-center d-flex ">
-                                            <div className="font-20 font-black gilroy-medium pb-1 pb-md-2">
+                                            <div className="font-20 font-black gilroy-medium">
                                                 {product.name}
                                             </div>
                                             <div className="font-18 font-black-80 gilroy-regular mt-auto">

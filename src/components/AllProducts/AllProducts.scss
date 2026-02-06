@@ -208,7 +208,7 @@
         height: 100%;
         flex-direction: column;
         @media only screen and (max-width: 767px) {
-          padding: 5px;
+          padding: 6px 5px;
         }
         .order-now-link{
           background-color: var(--primary);

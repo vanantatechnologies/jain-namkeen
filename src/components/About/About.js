@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./About.scss";
+import jainlogo from "../../assets/img/Jain-Namkin-Logo.svg";
 
 const About = () => {
     const sectionRef = useRef(null);
@@ -39,6 +40,14 @@ const About = () => {
                                     }`}
                                 >
                                     About <span className="font-primary">Jain Namkin</span>
+                                    <div className="d-block mt-2 mb-2">
+                                        <img
+                                            src={jainlogo}
+                                            alt="Jain Namkin"
+                                            loading="lazy"
+                                            className="jain-store img-fluid"
+                                        />
+                                    </div>
                                 </h2>
                             </div>
 
@@ -77,7 +86,7 @@ const About = () => {
 
                                 <a
                                     href="/about"
-                                    className={`font-18 gilroy-medium common-primary-btn mt-3 mt-md-4 ${
+                                    className={`font-18 gilroy-medium common-primary-btn mt-sm-2 mt-md-4 ${
                                         isVisible
                                             ? "animate__animated animate__fadeInUp animate__delay-2s"
                                             : ""

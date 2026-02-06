@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./HomeBanner.scss";
-import ProductBanner from "../../assets/img/banner-product.webp";
+import ProductBanner from "../../assets/img/banner-product-new.webp";
 
 const HomeBanner = () => {
     const bannerRef = useRef(null);
@@ -27,9 +27,9 @@ const HomeBanner = () => {
     return (
         <section className="section-home-banner position-relative" ref={bannerRef}>
             <div className="container custom-container">
-                <div className="row">
+                <div className="row align-items-center">
                     {/* IMAGE */}
-                    <div className="col-md-4 text-center order-md-2">
+                    <div className="col-md-5 text-center order-md-2">
                         <div
                             className={`main-banner ${
                                 isVisible
@@ -42,12 +42,13 @@ const HomeBanner = () => {
                                 alt="Marquees Jain Namkin"
                                 loading="lazy"
                                 className="jain-store img-fluid w-100"
+                                width={1250} height={805} loading="lazy" />
                             />
                         </div>
                     </div>
 
                     {/* CONTENT */}
-                    <div className="col-md-8 order-md-1">
+                    <div className="col-md-7 order-md-1">
                         <div className="home-banner" style={{ maxWidth: "700px" }}>
                             <h1
                                 className={`font-70 text-white gelica-regular overflow-hidden ${
@@ -72,7 +73,7 @@ const HomeBanner = () => {
 
                             <a
                                 href="/about"
-                                className={`font-18 gilroy-medium common-primary-btn mt-3 mt-md-4 ${
+                                className={`font-18 gilroy-medium common-primary-btn mt-sm-2 mt-md-4 ${
                                     isVisible
                                         ? "animate__animated animate__fadeInUp animate__delay-2s"
                                         : ""
