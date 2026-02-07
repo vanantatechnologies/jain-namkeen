@@ -220,8 +220,16 @@ const Footer = () => {
                         Copyright © 2026 JAIN Namkin. All Rights Reserved
                     </div>
                     <div className="right">
-                        Designed and Developed by <a href="/about">Sunny Soni.</a>
+                        Designed and Developed by{" "}
+                        <a
+                            href="https://vanantatech.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Vananta Technologies
+                        </a>.
                     </div>
+
                 </div>
             </div>
 

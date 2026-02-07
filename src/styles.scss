@@ -338,17 +338,13 @@ body {
   }
 }
 
-
-
-
-
 .font-12 {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
   letter-spacing: 0.5px;
   @media only screen and (max-width: 991px) {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 12px;
   }
 }
 .font-14 {
