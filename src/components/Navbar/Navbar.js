@@ -105,7 +105,7 @@ const Navbar = () => {
 
                         {/* Mobile-only links */}
                         <div className="mobileview-only d-flex">
-                            <li className="navbar-item">
+                            <li className="navbar-item d-none">
                                 <NavLink
                                     to="/download"
                                     className={({ isActive }) =>

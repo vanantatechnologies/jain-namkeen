@@ -15,33 +15,50 @@ const InquiryForm = () => {
     const formRef = useRef(null);
     const [loading, setLoading] = useState(false);
 
+    const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const validateForm = () => {
+        const { firstName, lastName, email, phone, products, message } = formData;
+
+        if (!firstName || !lastName || !email || !phone || !products || !message) {
+            alert('Please fill all required fields.');
+            return false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+
+        return true;
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!formRef.current) return;
 
-        // Basic validation
-        const { firstName, lastName, email, phone, products, message } = formData;
-        if (!firstName || !lastName || !email || !phone || !products || !message) {
-            alert('Please fill all required fields.');
-            return;
-        }
+        if (!validateForm()) return;
 
         setLoading(true);
 
         emailjs
             .sendForm(
-                'service_8mogpzp',
-                'template_pliejwh',
+                SERVICE_ID,
+                TEMPLATE_ID,
                 formRef.current,
-                'a2sKCrfan4KI8PWXr'
+                PUBLIC_KEY
             )
             .then(() => {
                 alert('✅ Inquiry sent successfully!');
+
                 setFormData({
                     firstName: '',
                     lastName: '',
@@ -50,11 +67,11 @@ const InquiryForm = () => {
                     products: '',
                     message: '',
                 });
-                formRef.current.reset();
+
                 setLoading(false);
             })
             .catch((error) => {
-                console.error('❌ Failed to send email:', error.text || error);
+                console.error('EmailJS Error:', error);
                 alert('Something went wrong. Please try again.');
                 setLoading(false);
             });
@@ -78,7 +95,11 @@ const InquiryForm = () => {
                 <span className="d-block">HAVE QUESTIONS?</span>
                 Send Us A Message
             </h2>
-            <p className="font-16 font-black-80 gilroy-regular mb-2 mb-md-3">Whether you have a question, feedback, or wish to share your experience, feel free to reach out. Our team is here to assist you and ensure your satisfaction.</p>
+
+            <p className="font-16 font-black-80 gilroy-regular mb-2 mb-md-3">
+                Whether you have a question, feedback, or wish to share your experience,
+                feel free to reach out. Our team is here to assist you.
+            </p>
 
             <div className="row g-3 custom-gap">
                 <div className="col-md-6">
