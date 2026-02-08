@@ -90,10 +90,11 @@
                   a{
                     font-size: 16px;
                     line-height: 30px;
-                    font-weight: 400;
                     padding: 2px 0;
                     display: block;
                     color: var(--white);
+                    font-family: 'Gilroy', sans-serif;
+                    font-weight: 400;
                     text-decoration: none;
                     @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
@@ -118,7 +119,8 @@
                 align-items: start;
                 gap: 10px;
                 padding: 5px 0;
-
+                font-family: 'Gilroy', sans-serif;
+                font-weight: 400;
                 .icon-box {
                   height: 30px;
                   min-width: 30px;
@@ -135,6 +137,7 @@
                 a {
                   font-size: 16px;
                   line-height: 30px;
+                  font-family: 'Gilroy', sans-serif;
                   font-weight: 400;
                   display: block;
                   color: var(--white);
@@ -179,7 +182,8 @@
                 a {
                   line-height: 0;
                   text-decoration: none;
-
+                  font-family: 'Gilroy', sans-serif;
+                  font-weight: 400;
                   &:hover {
                     opacity: 0.8;
                   }
@@ -284,11 +288,14 @@
       font-size: 14px;
       font-weight: 400;
       color: #fff;
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 400;
 
       a {
         color: #fff;
         text-decoration: none;
-
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 500;
         &:hover {
           opacity: 0.80;
         }
@@ -306,7 +313,6 @@
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  //background: #f9f9f9; /* optional background */
   padding: 0 0 10px 0;
   position: relative;
 }

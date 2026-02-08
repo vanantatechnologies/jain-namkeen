@@ -15,11 +15,15 @@
         gap: 0;
         grid-template-columns: repeat(1, 1fr);
       }
+      @media only screen and (max-width: 767px) {
+        &:first-child{
+          margin-top: 25px;
+        }
+      }
       @media only screen and (max-width: 575px) {
         &:first-child{
           margin-top: 25px;
         }
-
       }
 
       .inner-one{
@@ -59,6 +63,8 @@
               a{
                 display: inline-block;
                 padding-right: 8px;
+                font-family: 'Gilroy', sans-serif;
+                font-weight: 400;
               }
             }
             a {
@@ -68,6 +74,8 @@
               display: block;
               color: var(--black-80);
               text-decoration: none;
+              font-family: 'Gilroy', sans-serif;
+              font-weight: 400;
               &:hover {
                 opacity: 0.8;
               }
