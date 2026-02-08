@@ -188,34 +188,34 @@ const AboutUs = () => {
                                 <div className="col-md-6">
                                     <div className="our-real-story">
                                         <div className="story-item" data-image={img1}>
-                                            <p className="font-18 font-black-80 mb-3">
+                                            <p className="font-18 font-black-80 gilroy-regular mb-3">
                                                 Encouraged by overwhelming customer affection, Mr. Jain established a small shop near Ahmedabad’s historic Delhi Darwaja—naming it Jain Chawana Mart.
                                             </p>
-                                            <p className="font-18 font-black-80 mb-3">
+                                            <p className="font-18 font-black-80 gilroy-regular mb-3">
                                                 Decades later, the same shop proudly stands as one of Ahmedabad’s most beloved and iconic Namkin destinations, continuing its journey without compromising authenticity.
                                             </p>
                                         </div>
 
                                         <div className="story-item" data-image={img2}>
-                                            <p className="font-18 font-black-80 mb-3">
+                                            <p className="font-18 font-black-80 gilroy-regular mb-3">
                                                 The legacy flourished further under the leadership of Mr. Ganeshlalji Jain and his inspiring wife, Mrs. Kamlaben. With the passion and innovation of their son Vikrantbhai, Jain Chawana Mart entered a new era of growth.
                                             </p>
-                                            <p className="font-18 font-black-80 mb-3">
+                                            <p className="font-18 font-black-80 gilroy-regular mb-3">
                                                 It was during this time that signature creations like Rajwadi Mixture and Jain Special Nylon Papdi were born—recipes so distinctive that they remain unmatched to this day.
                                             </p>
                                         </div>
 
                                         <div className="story-item" data-image={img3}>
-                                            <p className="font-18 font-black-80 mb-3">
+                                            <p className="font-18 font-black-80 gilroy-regular mb-3">
                                                 Today, nearly 80 years later, Jain Chawana Mart at Delhi Darwaja and Jain Namkin at Shahibaug continue to delight generations with what many proudly call the finest Namkin Ahmedabad has ever known.
                                             </p>
-                                            <p className="font-18 font-black-80 mb-3">
+                                            <p className="font-18 font-black-80 gilroy-regular mb-3">
                                                 While the market may be filled with imitations, true connoisseurs know that authentic Jain Namkin can only be experienced at its original stores.
                                             </p>
                                         </div>
 
                                         <div className="story-item" data-image={img4}>
-                                            <p className="font-18 font-black-80 mb-3">
+                                            <p className="font-18 font-black-80 gilroy-regular mb-3">
                                                 Guided by the fresh vision of the fourth generation—Kulinkumar and Shalinkumar—the brand now looks beyond borders. Their mission is simple yet powerful: to carry the unmistakable taste of authentic Jain Namkin to every corner of the world.
                                             </p>
                                         </div>

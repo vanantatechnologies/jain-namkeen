@@ -113,7 +113,7 @@ const OurJourney = () => {
                                             <div className="journey-year font-24 font-primary gelica-regular d-block mb-2">
                                                 {item.year}
                                             </div>
-                                            <p className="font-18 font-black-80 m-0">
+                                            <p className="font-18 font-black-80 gilroy-regular m-0">
                                                 {item.description}
                                             </p>
                                         </div>
