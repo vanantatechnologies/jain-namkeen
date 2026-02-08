@@ -61,7 +61,7 @@ const Contactus = () => {
             >
                 <div className="container custom-container">
                     <div className="row">
-                        <div className="col-12 col-sm-5 col-xxl-6 order-md-2">
+                        <div className="col-12 col-md-6 col-lg-6 col-xxl-6 order-md-2">
                             <div
                                 className={`contactus-right-main h-100 ${
                                     visible ? "animate__animated animate__fadeInUp" : ""
@@ -72,7 +72,7 @@ const Contactus = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-sm-7 col-xxl-6 order-md-1">
+                        <div className="col-12 col-md-6 col-lg-6 col-xxl-6 order-md-1">
                             <div className="contactus-left-main">
                                 <div
                                     className={`contactus-left ${
@@ -131,7 +131,7 @@ const Contactus = () => {
                                     </div>
 
                                     <div
-                                        className={`inner-two d-none d-lg-block ${
+                                        className={`inner-two d-none d-xl-block ${
                                             visible ? "animate__animated animate__fadeInUp" : ""
                                         }`}
                                         style={{ animationDelay: "0.4s" }}
@@ -200,7 +200,7 @@ const Contactus = () => {
                                     </div>
 
                                     <div
-                                        className={`inner-two d-none d-lg-block ${
+                                        className={`inner-two d-none d-xl-block ${
                                             visible ? "animate__animated animate__fadeInUp" : ""
                                         }`}
                                         style={{ animationDelay: "0.8s" }}
